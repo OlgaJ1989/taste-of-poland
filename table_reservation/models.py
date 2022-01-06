@@ -14,7 +14,6 @@ class Reservation(models.Model):
     updated_on = models.DateTimeField(auto_now=True)
     party_size = models.IntegerField(default=1)
     additional_info = models.TextField(blank=True, null=True)
-    name = models.TextField()
-
+    
     def __str__(self):
         return '%s %s' % (self.first_name, self.last_name)
