@@ -1,3 +1,7 @@
 {% extends 'base.html' %}
 
-<h1>Home</h1>>
+{% block content %}
+
+<a href="{% url 'create-booking' %}">Book a table</a>
+
+{% endblock %}
