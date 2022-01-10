@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .forms import ReservationForm
 
 
@@ -12,5 +12,10 @@ def menu(request):
 
 def create_booking(request):
     form = ReservationForm()
+    if request.method == 'POST':
+        form = ReservationForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('home')
     context = {'form': form}
     return render(request, 'booking_form.html', context)

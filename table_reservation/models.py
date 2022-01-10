@@ -22,7 +22,8 @@ class Reservation(models.Model):
     table = models.ForeignKey('Table', on_delete=models.CASCADE, default=None)
     booker = models.ForeignKey(User, on_delete=models.CASCADE, default=None)
     party_size = models.IntegerField(default=1)
-    time_and_date = models.DateTimeField(default=None)
+    date = models.DateField(blank=True, null=True)
+    time = models.TimeField(default=None, blank=True, null=True)
     additional_info = models.TextField(blank=True, null=True)
 
 
