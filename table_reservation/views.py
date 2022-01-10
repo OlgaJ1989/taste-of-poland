@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .forms import ReservationForm
 
 
 def home(request):
@@ -10,5 +11,6 @@ def menu(request):
 
 
 def create_booking(request):
-    context = {}
+    form = ReservationForm()
+    context = {'form': form}
     return render(request, 'booking_form.html', context)
