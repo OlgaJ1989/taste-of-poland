@@ -19,3 +19,11 @@ def create_booking(request):
             return redirect('home')
     context = {'form': form}
     return render(request, 'booking_form.html', context)
+
+
+def update_booking(request, pk):
+    reservation = Reservation.objects.get(id=pk)
+    form = ReservationForm(instance=reservation)
+    context = {'form': form}
+    return render(request, 'booking_form.html', context)
+
