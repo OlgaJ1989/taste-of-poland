@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 from .forms import ReservationForm
+from .models import Reservation
 
 
 def home(request):
@@ -8,6 +9,12 @@ def home(request):
 
 def menu(request):
     return render(request, 'menu.html')
+
+
+def profile(request):
+    reservations = Reservation.objects.all()
+    context = {'reservations': reservations}
+    return render(request, 'profile.html', context)
 
 
 def create_booking(request):

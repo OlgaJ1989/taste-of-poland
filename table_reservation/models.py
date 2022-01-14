@@ -25,6 +25,7 @@ class Reservation(models.Model):
     date = models.DateField(blank=True, null=True)
     time = models.TimeField(default=None, blank=True, null=True)
     additional_info = models.TextField(blank=True, null=True)
+    objects = models.Manager()
 
 
 # class Reservation(models.Model):
