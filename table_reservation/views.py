@@ -11,7 +11,7 @@ def menu(request):
     return render(request, 'menu.html')
 
 
-def profile(request):
+def profile(request, pk):
     reservations = Reservation.objects.all()
     context = {'reservations': reservations}
     return render(request, 'profile.html', context)
@@ -33,4 +33,3 @@ def update_booking(request, pk):
     form = ReservationForm(instance=reservation)
     context = {'form': form}
     return render(request, 'booking_form.html', context)
-
