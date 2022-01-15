@@ -11,10 +11,14 @@ def menu(request):
     return render(request, 'menu.html')
 
 
-def profile(request, pk):
+def profile(request):
     reservations = Reservation.objects.all()
     context = {'reservations': reservations}
     return render(request, 'profile.html', context)
+
+
+def booking_details(request, pk):
+    return render(request, 'booking_details.html')
 
 
 def create_booking(request):

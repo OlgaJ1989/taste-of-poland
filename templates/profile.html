@@ -8,7 +8,7 @@
 
     {% for reservation in reservations %}
     <div>
-        <p>{{ reservation.id }} - <a href="/profile/{{reservation.id}}">{{ reservation.date }}, {{ reservation.time }}</a></p>
+        <p>{{ reservation.id }} - <a href="/booking_details/{{reservation.id}}">{{ reservation.date }}, {{ reservation.time }}</a></p>
     </div>
     {% endfor %}
 

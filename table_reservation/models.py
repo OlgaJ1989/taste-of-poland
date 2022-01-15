@@ -43,8 +43,8 @@ class Reservation(models.Model):
 #     additional_info = models.TextField(blank=True, null=True)
 #     approved = models.BooleanField(default=False)
 
-# def __str__(self):
-#     return self.title
+#     def __str__(self):
+#         return self.title
 
 #     def __str__(self):
 #         return '%s %s' % (self.first_name, self.last_name)
