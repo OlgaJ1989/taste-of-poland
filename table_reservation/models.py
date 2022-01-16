@@ -27,7 +27,11 @@ class Reservation(models.Model):
     date = models.DateField(blank=True, null=True)
     time = models.TimeField(default=None, blank=True, null=True)
     additional_info = models.TextField(blank=True, null=True)
-    objects = models.Manager()
+    created_on = models.DateTimeField(auto_now_add=True)
+    updated_on = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        ordering = ['-updated_on', '-created_on']
 
     def __str__(self):
         return '%s %s %s %s' % (self.first_name, self.last_name, self.date, self.time)

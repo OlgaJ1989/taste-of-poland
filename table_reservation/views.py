@@ -28,7 +28,7 @@ def create_booking(request):
         form = ReservationForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('home')
+            return redirect('profile')
     context = {'form': form}
     return render(request, 'booking_form.html', context)
 
@@ -36,5 +36,19 @@ def create_booking(request):
 def update_booking(request, pk):
     reservation = Reservation.objects.get(id=pk)
     form = ReservationForm(instance=reservation)
+    if request.method == 'POST':
+        form = ReservationForm(request.POST, instance=reservation)
+        if form.is_valid():
+            form.save()
+            return redirect('profile')
     context = {'form': form}
     return render(request, 'booking_form.html', context)
+
+
+def delete_booking(request, pk):
+    reservation = Reservation.objects.get(id=pk)
+    if request.method == 'POST':
+        reservation.delete()
+        return redirect('profile')
+    return render(request, 'delete.html', {'obj': reservation}) 
+

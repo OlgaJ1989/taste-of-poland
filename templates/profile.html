@@ -9,11 +9,11 @@
     {% for reservation in reservations %}
     <div>
         <p>{{ reservation.id }} - <a href="/booking_details/{{reservation.id}}">{{ reservation.date }}, {{ reservation.time }}</a></p>
+        <a href="{% url 'update-booking' reservation.id %}">Edit</a>
+        <a href="{% url 'delete-booking' reservation.id %}">Delete</a>
     </div>
     {% endfor %}
 
 </div>
-
-
 
 {% endblock %}
