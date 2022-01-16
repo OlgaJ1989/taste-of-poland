@@ -18,6 +18,7 @@ def profile(request):
 
 
 def booking_details(request, pk):
+    reservation = Reservation.objects.get(id=pk)
     return render(request, 'booking_details.html')
 
 
