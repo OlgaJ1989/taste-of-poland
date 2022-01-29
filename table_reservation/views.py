@@ -50,5 +50,4 @@ def delete_booking(request, pk):
     if request.method == 'POST':
         reservation.delete()
         return redirect('profile')
-    return render(request, 'delete.html', {'obj': reservation}) 
-
+    return render(request, 'delete.html', {'obj': reservation})

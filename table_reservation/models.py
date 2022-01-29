@@ -36,7 +36,8 @@ class Reservation(models.Model):
         ordering = ['-updated_on', '-created_on']
 
     def __str__(self):
-        return '%s %s %s %s' % (self.first_name, self.last_name, self.date, self.time)
+        return '%s %s %s %s' % (
+            self.first_name, self.last_name, self.date, self.time)
 
 
 # class Reservation(models.Model):
