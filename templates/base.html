@@ -14,12 +14,20 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top" style="background-color: #fc0303;">
+        <a href="/" class="navbar-brand">Taste of Poland</a>
+        <ul class="navbar-nav mr-auto">
+            <li class="active nav-item mr-2"><a class="nav-link" href="/">Home</a></li>
+            <li class="active nav-item mr-2"><a class="nav-link" href="">Menu</a></li>
+            <li class="active nav-item mr-2"><a class="nav-link" href="{% url 'create-booking' %}">Book</a></li>
+            <li class="active nav-item mr-2"><a class="nav-link" href="">Gallery</a></li>
+            <li class="active nav-item mr-2"><a class="nav-link" href="">Contact</a></li>
+        </ul>
+        <a href="">Sign In / Sign Up</a>
 
-    <a href='/'>
-        <h1>Taste of Poland</h1>
-    </a>
+    </nav>
 
-    <hr>
+
 
     {% block content %}
 
