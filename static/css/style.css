@@ -1,0 +1,23 @@
+/* Footer */
+
+footer {
+    height: auto;
+    background-color: red;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    width: 100%;
+}
+
+.social-media {
+    text-align: center;
+}
+
+.social-media li {
+    display: inline;
+}
+
+.social-media i {
+    font-size: 150%;
+    margin: 1%;
+    color: #ffffff;
+}
