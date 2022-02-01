@@ -9,7 +9,7 @@
 
 .jumbotron-container {
     height: 100vh;
-    background: url("{% static 'images/ben.jpg' %}") no-repeat bottom right fixed; 
+    background: url("https://res.cloudinary.com/do5s2hv94/image/upload/v1643678199/background-image_lyeboy.jpg") no-repeat bottom right fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
