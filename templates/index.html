@@ -2,17 +2,40 @@
 
 {% block content %}
 
-<div class="container-fluid jumbotron-container mt-5 mb-5">
+<div class="container-fluid jumbotron-container">
     <div class="row">
         <div class="col-12">
-            <section class="jumbotron text-center">
+            <section class="jumbotron rounded border-danger text-center">
                 <h1>A traditional Polish restaurant in the centre of Brighton</h1>
+                <hr class="rounded my-4">
                 <p>Sign in to make a booking!</p>
-                <a href="{% url 'create-booking' %}"><button type="button" class="btn btn-light">Book a
+                <a href="{% url 'create-booking' %}"><button type="button" class="btn btn-danger">Book a
                         table</button></a>
             </section>
         </div>
     </div>
 </div>
+
+<div class="container about-container text-center mt-5">
+    <div class="row">
+        <div class="col-12">
+            <section class="about-us">
+                <h1>A Taste of Poland</h1>
+                <p>Located in the bustling heart of Brighton, Taste of Poland is a family run Polish restaurant popular
+                    with both locals and visitors to the city. We pride ourselves for serving authentic, traditional
+                    dishes for affordable prices.</p>
+            </section>
+        </div>
+    </div>
+</div>
+
+<div class="container text-center">
+    <div class="row">
+        <div class="col-12">
+            <hr class="rounded my-4">
+        </div>
+    </div>
+</div>
+
 
 {% endblock %}
