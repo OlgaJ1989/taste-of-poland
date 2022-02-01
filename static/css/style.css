@@ -1,3 +1,21 @@
+/* Navbar */
+
+#my-logo {
+    font-family: 'Tangerine', sans-serif;
+    font-size: 48px;
+}
+
+/* Jumbotron */
+
+.jumbotron-container {
+    height: 100vh;
+    background: url("{% static 'images/ben.jpg' %}") no-repeat bottom right fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
 /* Footer */
 
 footer {
