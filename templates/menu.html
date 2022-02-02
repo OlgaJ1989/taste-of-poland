@@ -1,1 +1,432 @@
-<h1>Menu</h1>
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container menu-container">
+    <div class="center-title">
+        <h2 class="text-white text-center">Our Food Menu</h2>
+    </div>
+    <div class="food-menu-card">
+        <div>
+
+            <!-- Nav tabs -->
+            <ul class="nav  tabs-menu-nav justify-content-center mb30" role="tablist">
+                <li class="nav-item" role="presentation"><a class="nav-link active show" href="#breakfast"
+                        aria-controls="breakfast" role="tab" data-toggle="tab" aria-selected="true">Soups</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link" href="#lunch" aria-controls="lunch"
+                        role="tab" data-toggle="tab" aria-selected="false">Mains</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link" href="#dinner" aria-controls="dinner"
+                        role="tab" data-toggle="tab" aria-selected="false">Desserts</a></li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane fade active show" id="breakfast">
+                    <div class="row">
+                        <div class="col-md-6 mb20">
+                            <article class="media">
+                                <div class="media-body align-self-center g-pl-10">
+                                    <div class="d-flex justify-content-between mb10">
+                                        <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">Chłodnik
+                                            litewski</h3>
+                                        <div class="align-self-center">
+                                            <strong class="text-white font700">£6.50</strong>
+                                        </div>
+                                    </div>
+                                    <p class="mb-0">Cold yoghurt-and-beetroot soup served with a hard boiled egg.</p>
+                                </div>
+                            </article>
+                            <article class="media">
+                                <div class="media-body align-self-center g-pl-10">
+                                    <div class="d-flex justify-content-between mb10">
+                                        <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">Barszcz
+                                            biały</h3>
+
+                                        <div class="align-self-center">
+                                            <strong class="text-white font700">£7.00</strong>
+                                        </div>
+                                    </div>
+                                    <p class="mb-0">Sour thick wheat starch soup with marjoram, potatoes, and cream.</p>
+                                </div>
+                            </article>
+                            <article class="media">
+                                <div class="media-body align-self-center g-pl-10">
+                                    <div class="d-flex justify-content-between mb10">
+                                        <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">Barszcz
+                                            czerwony</h3>
+                                        <div class="align-self-center">
+                                            <strong class="text-white font700">£6.20</strong>
+                                        </div>
+                                    </div>
+                                    <p class="mb-0">Refreshing beetroot soup with dumplings.</p>
+                                </div>
+                            </article>
+                            <article class="media">
+                                <div class="media-body align-self-center g-pl-10">
+                                    <div class="d-flex justify-content-between mb10">
+                                        <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">Żurek
+                                        </h3>
+                                        <div class="align-self-center">
+                                            <strong class="text-white font700">£7.50</strong>
+                                        </div>
+                                    </div>
+                                    <p class="mb-0">Sour rye soup with potato, sausage and egg, served in a
+                                        bread loaf.</p>
+                                </div>
+                            </article>
+                            <article class="media">
+                                <div class="media-body align-self-center g-pl-10">
+                                    <div class="d-flex justify-content-between mb10">
+                                        <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">Krupnik
+                                        </h3>
+                                        <div class="align-self-center">
+                                            <strong class="text-white font700">£6.00</strong>
+                                        </div>
+                                    </div>
+                                    <p class="mb-0">Barley soup with a smattering of vegetables and smoked meat.</p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-6 mb20">
+                            <article class="media">
+                                <div class="media-body align-self-center g-pl-10">
+                                    <div class="d-flex justify-content-between mb10">
+                                        <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">
+                                            Kapuśniak</h3>
+                                        <div class="align-self-center">
+                                            <strong class="text-white font700">£5.90</strong>
+                                        </div>
+                                    </div>
+                                    <p class="mb-0">Sour cabbage soup with meat.</p>
+                                </div>
+                            </article>
+                            <article class="media">
+                                <div class="media-body align-self-center g-pl-10">
+                                    <div class="d-flex justify-content-between mb10">
+                                        <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">Zupa
+                                            ogórkowa</h3>
+                                        <div class="align-self-center">
+                                            <strong class="text-white font700">£6.100</strong>
+                                        </div>
+                                    </div>
+                                    <p class="mb-0">Sour cucumber soup.</p>
+                                </div>
+                            </article>
+                            <article class="media">
+                                <div class="media-body align-self-center g-pl-10">
+                                    <div class="d-flex justify-content-between mb10">
+                                        <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">Zupa
+                                            koperkowa</h3>
+                                        <div class="align-self-center">
+                                            <strong class="text-white font700">£7.10</strong>
+                                        </div>
+                                    </div>
+                                    <p class="mb-0">Dill soup.</p>
+                                </div>
+                            </article>
+                            <article class="media">
+                                <div class="media-body align-self-center g-pl-10">
+                                    <div class="d-flex justify-content-between mb10">
+                                        <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">Rosół z
+                                            kurczaka</h3>
+                                        <div class="align-self-center">
+                                            <strong class="text-white font700">£5.50</strong>
+                                        </div>
+                                    </div>
+                                    <p class="mb-0">Golden chicken soup with noodles.</p>
+                                </div>
+                            </article>
+                            <article class="media">
+                                <div class="media-body align-self-center g-pl-10">
+                                    <div class="d-flex justify-content-between mb10">
+                                        <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">
+                                            Grochówka</h3>
+                                        <div class="align-self-center">
+                                            <strong class="text-white font700">£6.45</strong>
+                                        </div>
+                                    </div>
+                                    <p class="mb-0">Thick pea soup.</p>
+                                </div>
+                            </article>
+                            <article class="media">
+                                <div class="media-body align-self-center g-pl-10">
+                                    <div class="d-flex justify-content-between mb10">
+                                        <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">Flaki
+                                            wołowe</h3>
+                                        <div class="align-self-center">
+                                            <strong class="text-white font700">£7.90</strong>
+                                        </div>
+                                    </div>
+                                    <p class="mb-0">Beef tripe soup.</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="lunch">
+                    <div class="row">
+                        <div class="col-md-6 mb20">
+                            <article class="media">
+                                <div class="media-body align-self-center g-pl-10">
+                                    <div class="d-flex justify-content-between mb10">
+                                        <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">
+                                            Eskalopki z cielęciny</h3>
+                                        <div class="align-self-center">
+                                            <strong class="text-white font700">£10.50</strong>
+                                        </div>
+                                    </div>
+                                    <p class="mb-0">Veal in a blanket.</p>
+                                </div>
+                            </article>
+                            <article class="media">
+                                <div class="media-body align-self-center g-pl-10">
+                                    <div class="d-flex justify-content-between mb10">
+                                        <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">Karkówka
+                                        </h3>
+                                        <div class="align-self-center">
+                                            <strong class="text-white font700">£12.10</strong>
+                                        </div>
+                                    </div>
+                                    <p class="mb-0">Roasted tenderloin.</p>
+                                </div>
+                            </article>
+                            <article class="media">
+                                <div class="media-body align-self-center g-pl-10">
+                                    <div class="d-flex justify-content-between mb10">
+                                        <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">
+                                            Polędwiczki wołowe</h3>
+                                        <div class="align-self-center">
+                                            <strong class="text-white font700">£11.90</strong>
+                                        </div>
+                                    </div>
+                                    <p class="mb-0">Beef sirloin with rare mushroom sauce..</p>
+                                </div>
+                            </article>
+                            <article class="media">
+                                <div class="media-body align-self-center g-pl-10">
+                                    <div class="d-flex justify-content-between mb10">
+                                        <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">Kotlet
+                                            schabowy</h3>
+                                        <div class="align-self-center">
+                                            <strong class="text-white font700">£10.80</strong>
+                                        </div>
+                                    </div>
+                                    <p class="mb-0">Traditional breaded pork cutlet.</p>
+                                </div>
+                            </article>
+                            <article class="media">
+                                <div class="media-body align-self-center g-pl-10">
+                                    <div class="d-flex justify-content-between mb10">
+                                        <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">Zrazy
+                                            zawijane</h3>
+                                        <div class="align-self-center">
+                                            <strong class="text-white font700">£10.10</strong>
+                                        </div>
+                                    </div>
+                                    <p class="mb-0">Beef rolls stuffed with bacon, gherkin and onion, in a
+                                        spicy sauce.</p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-6 mb20">
+                            <article class="media">
+                                <div class="media-body align-self-center g-pl-10">
+                                    <div class="d-flex justify-content-between mb10">
+                                        <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">Żeberka
+                                            w miodzie</h3>
+                                        <div class="align-self-center">
+                                            <strong class="text-white font700">£12.20</strong>
+                                        </div>
+                                    </div>
+                                    <p class="mb-0">Pork ribs in honey.</p>
+                                </div>
+                            </article>
+                            <article class="media">
+                                <div class="media-body align-self-center g-pl-10">
+                                    <div class="d-flex justify-content-between mb10">
+                                        <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">Kurczak
+                                            de volaille</h3>
+                                        <div class="align-self-center">
+                                            <strong class="text-white font700">£10.50</strong>
+                                        </div>
+                                    </div>
+                                    <p class="mb-0">Chicken steaks spread with butter, filled with mushrooms and bread
+                                        crumbed, originally French.</p>
+                                </div>
+                            </article>
+                            <article class="media">
+                                <div class="media-body align-self-center g-pl-10">
+                                    <div class="d-flex justify-content-between mb10">
+                                        <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">Klopsiki
+                                        </h3>
+                                        <div class="align-self-center">
+                                            <strong class="text-white font700">£9.90</strong>
+                                        </div>
+                                    </div>
+                                    <p class="mb-0">Meatballs with tomato sauce.</p>
+                                </div>
+                            </article>
+                            <article class="media">
+                                <div class="media-body align-self-center g-pl-10">
+                                    <div class="d-flex justify-content-between mb10">
+                                        <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">Bigos
+                                        </h3>
+                                        <div class="align-self-center">
+                                            <strong class="text-white font700">£13.00</strong>
+                                        </div>
+                                    </div>
+                                    <p class="mb-0">Seasoned 'hunter' stew made from sauerkraut with chunks
+                                        of various meats and sausages, extremely traditional.</p>
+                                </div>
+                            </article>
+                            <article class="media">
+                                <div class="media-body align-self-center g-pl-10">
+                                    <div class="d-flex justify-content-between mb10">
+                                        <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">Fasolka
+                                            po bretońsku</h3>
+                                        <div class="align-self-center">
+                                            <strong class="text-white font700">£10.20</strong>
+                                        </div>
+                                    </div>
+                                    <p class="mb-0">Bean and sausage stew.</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="dinner">
+                    <div class="row">
+                        <div class="col-md-6 mb20">
+                            <article class="media">
+                                <div class="media-body align-self-center g-pl-10">
+                                    <div class="d-flex justify-content-between mb10">
+                                        <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">Menu
+                                            title</h3>
+                                        <div class="align-self-center">
+                                            <strong class="text-white font700">$1.20</strong>
+                                        </div>
+                                    </div>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                            </article>
+                            <article class="media">
+                                <div class="media-body align-self-center g-pl-10">
+                                    <div class="d-flex justify-content-between mb10">
+                                        <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">Faworki
+                                        </h3>
+                                        <div class="align-self-center">
+                                            <strong class="text-white font700">£6.50</strong>
+                                        </div>
+                                    </div>
+                                    <p class="mb-0">Pastry twisters.</p>
+                                </div>
+                            </article>
+                            <article class="media">
+                                <div class="media-body align-self-center g-pl-10">
+                                    <div class="d-flex justify-content-between mb10">
+                                        <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">
+                                            Galaretka</h3>
+                                        <div class="align-self-center">
+                                            <strong class="text-white font700">£4.20</strong>
+                                        </div>
+                                    </div>
+                                    <p class="mb-0">Sweet jelly (strawberry, blackcurrant or apple).</p>
+                                </div>
+                            </article>
+                            <article class="media">
+                                <div class="media-body align-self-center g-pl-10">
+                                    <div class="d-flex justify-content-between mb10">
+                                        <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">Makowiec
+                                        </h3>
+                                        <div class="align-self-center">
+                                            <strong class="text-white font700">£4.90</strong>
+                                        </div>
+                                    </div>
+                                    <p class="mb-0">Sweet poppy cake.</p>
+                                </div>
+                            </article>
+                            <article class="media">
+                                <div class="media-body align-self-center g-pl-10">
+                                    <div class="d-flex justify-content-between mb10">
+                                        <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">Pączki
+                                        </h3>
+                                        <div class="align-self-center">
+                                            <strong class="text-white font700">£2.20</strong>
+                                        </div>
+                                    </div>
+                                    <p class="mb-0">Traditional Polish doughnuts.</p>
+                                </div>
+                            </article>
+                            <article class="media">
+                                <div class="media-body align-self-center g-pl-10">
+                                    <div class="d-flex justify-content-between mb10">
+                                        <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">Kremówka
+                                            Papieska</h3>
+                                        <div class="align-self-center">
+                                            <strong class="text-white font700">£5.10</strong>
+                                        </div>
+                                    </div>
+                                    <p class="mb-0">Puff pastry cake with vanilla cream filling, topped with powdered
+                                        sugar.</p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-6 mb20">
+                            <article class="media">
+                                <div class="media-body align-self-center g-pl-10">
+                                    <div class="d-flex justify-content-between mb10">
+                                        <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">Sernik
+                                        </h3>
+                                        <div class="align-self-center">
+                                            <strong class="text-white font700">£3.20</strong>
+                                        </div>
+                                    </div>
+                                    <p class="mb-0">Delicious fat cheese cake.</p>
+                                </div>
+                            </article>
+                            <article class="media">
+                                <div class="media-body align-self-center g-pl-10">
+                                    <div class="d-flex justify-content-between mb10">
+                                        <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">
+                                            Szarlotka</h3>
+                                        <div class="align-self-center">
+                                            <strong class="text-white font700">£5.50</strong>
+                                        </div>
+                                    </div>
+                                    <p class="mb-0">Traditional Polish apple pie, served with whipped cream and/or ice
+                                        cream.</p>
+                                </div>
+                            </article>
+                            <article class="media">
+                                <div class="media-body align-self-center g-pl-10">
+                                    <div class="d-flex justify-content-between mb10">
+                                        <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">Kołaczki
+                                        </h3>
+                                        <div class="align-self-center">
+                                            <strong class="text-white font700">£5.10</strong>
+                                        </div>
+                                    </div>
+                                    <p class="mb-0">Polish cream cheese cookies.</p>
+                                </div>
+                            </article>
+                            <article class="media">
+                                <div class="media-body align-self-center g-pl-10">
+                                    <div class="d-flex justify-content-between mb10">
+                                        <h3 class="align-self-center text-capitalize mb0 h6 text-white font400">Ciasto
+                                            ze śliwkami </h3>
+                                        <div class="align-self-center">
+                                            <strong class="text-white font700">£5.70</strong>
+                                        </div>
+                                    </div>
+                                    <p class="mb-0">Plum cake with nuts and cinnamon.</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
