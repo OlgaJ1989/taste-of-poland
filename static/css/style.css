@@ -10,6 +10,11 @@ hr {
     height: 1px;
 }
 
+h5 { 
+    font-family: 'Tangerine', sans-serif;
+    font-size: 40px;
+}
+
 /* Navbar */
 
 #my-logo {
@@ -89,3 +94,12 @@ footer {
     margin: 1%;
     color: #ffffff;
 }
+
+/* Cards */
+
+.card {
+    border-style: solid;
+    background-color: black;
+    color: white;
+}
+
