@@ -74,8 +74,8 @@ h5 {
 /* Menu */
 
 .menu-container h2 {
-    font-family: 'Roboto Slab', sans-serif;
-    font-size: 40px;
+    font-family: 'Tangerine', sans-serif;
+    font-size: 60px;
     padding-top: 50px;
 }
 
@@ -142,6 +142,18 @@ h5 {
 
 .media-body, p {
     color: #999;
+}
+
+/* Gallery */
+
+.gallery-container h1 {
+    font-family: 'Tangerine', sans-serif;
+    font-size: 60px;
+}
+
+.img-thumbnail {
+    background-color: black;
+    border: 1px solid white;
 }
 
 /* Footer */

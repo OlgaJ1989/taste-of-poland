@@ -11,6 +11,10 @@ def menu(request):
     return render(request, 'menu.html')
 
 
+def gallery(request):
+    return render(request, 'gallery.html')
+
+
 def profile(request):
     reservations = Reservation.objects.all()
     context = {'reservations': reservations}
