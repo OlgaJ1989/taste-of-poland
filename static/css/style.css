@@ -188,3 +188,9 @@ footer {
     color: white;
 }
 
+/* Booking form */
+
+.form-title {
+    font-family: 'Tangerine', sans-serif;
+    font-size: 60px;
+}

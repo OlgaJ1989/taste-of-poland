@@ -22,4 +22,4 @@ class ReservationForm(ModelForm):
         self.fields['date'].widget.attrs.update({'class': 'form-control'})
         self.fields['time'].widget.attrs.update({'class': 'form-control'})
         self.fields['additional_info'].widget.attrs.update(
-            {'class': 'form-control'})
+            {'class': 'form-control', 'rows': '3'})

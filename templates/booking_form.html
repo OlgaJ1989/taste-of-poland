@@ -1,14 +1,24 @@
 {% extends 'base.html' %}
 
-{% block content %} 
+{% block content %}
 
-<div class="form-group">
-    <form method="POST" action="">
-        {% csrf_token %}
-        {{form.as_p}}
-        <input type="submit" value="Submit"/>
-
-    </form>
+<div class="container text-white justify-content-center">
+    <div class="row">
+        <div class="col-12 mt-5">
+            <h1 class="text-center form-title">Book a table</h1>
+        </div>
+    </div>
+    <hr class="rounded mt-5 mb-5">
+    <div class="container form-group col-xs-10 col-sm-6 col-md-8 col-lg-6 col-xl-5">
+        <form method="POST" action="">
+            {% csrf_token %}
+            {{form.as_p}}
+            <section class="text-center pt-3">
+                <input type="submit" type="button" class="btn btn-danger" value="Submit" />
+            </section>
+        </form>
+    </div>
+    <hr class="rounded my-5">
 </div>
 
-{% endblock %} 
+{% endblock %}
