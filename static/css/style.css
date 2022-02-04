@@ -200,3 +200,7 @@ footer {
     display: inline;
 }
 
+label[for="id_date_month"] {
+    display: block;
+ }
+
