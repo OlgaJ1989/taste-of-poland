@@ -194,3 +194,9 @@ footer {
     font-family: 'Tangerine', sans-serif;
     font-size: 60px;
 }
+
+.date-picker {
+    width: 33%;
+    display: inline;
+}
+
