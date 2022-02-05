@@ -15,6 +15,10 @@ def gallery(request):
     return render(request, 'gallery.html')
 
 
+def contact(request):
+    return render(request, 'contact.html')
+
+
 def profile(request):
     reservations = Reservation.objects.all()
     context = {'reservations': reservations}

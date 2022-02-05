@@ -19,7 +19,8 @@ class ReservationForm(ModelForm):
         self.fields['last_name'].widget.attrs.update({'class': 'form-control'})
         self.fields['party_size'].widget.attrs.update(
             {'class': 'form-control'})
-        self.fields['date'].widget.attrs.update({'class': 'form-control date-picker'})
+        self.fields['date'].widget.attrs.update(
+            {'class': 'form-control date-picker'})
         self.fields['time'].widget.attrs.update({'class': 'form-control'})
         self.fields['additional_info'].widget.attrs.update(
             {'class': 'form-control', 'rows': '3'})

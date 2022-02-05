@@ -204,3 +204,13 @@ label[for="id_date_month"] {
     display: block;
  }
 
+ /* Contact Page */
+
+ .contact-container h1 {
+    font-family: 'Tangerine', sans-serif;
+    font-size: 60px;
+}
+
+.contact-container p, i {
+    font-size: 20px;
+}
