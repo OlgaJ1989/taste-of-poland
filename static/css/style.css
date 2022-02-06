@@ -234,3 +234,7 @@ i {
     font-family: 'Tangerine', sans-serif;
     font-size: 60px;
 }
+
+.errorlist {
+    color: red!important;
+}
