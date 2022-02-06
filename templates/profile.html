@@ -2,18 +2,27 @@
 
 {% block content %}
 
-<h1>Current bookings</h1>
-
-<div>
-
-    {% for reservation in reservations %}
-    <div>
-        <p>{{ reservation.id }} - <a href="/booking_details/{{reservation.id}}">{{ reservation.date }}, {{ reservation.time }}</a></p>
-        <a href="{% url 'update-booking' reservation.id %}">Edit</a>
-        <a href="{% url 'delete-booking' reservation.id %}">Delete</a>
+<div class="container profile-container text-white">
+    <div class="row">
+        <div class="col-12 mt-5">
+            <h1 class="text-center">Current bookings</h1>
+        </div>
     </div>
-    {% endfor %}
-
+    <hr class="rounded mt-5">
+    <div class="row">
+        <div class="col-12 mt-5">
+            {% for reservation in reservations %}
+            <div>
+                <p style="font-size: 20px">{{ reservation.id }}. 
+                    <a href="/booking_details/{{reservation.id}}">{{ reservation.first_name }} {{ reservation.last_name }} 
+                        - {{ reservation.date }} - {{ reservation.time }} - {{ reservation.party_size }}</a></p>
+                <a href="{% url 'update-booking' reservation.id %}" class="btn btn-primary">Edit</a>
+                <a href="{% url 'delete-booking' reservation.id %}" class="btn btn-danger">Delete</a>                
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    <hr class="rounded my-5">
 </div>
 
 {% endblock %}

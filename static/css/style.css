@@ -10,7 +10,7 @@ hr {
     height: 1px;
 }
 
-h5 { 
+h5 {
     font-family: 'Tangerine', sans-serif;
     font-size: 40px;
 }
@@ -150,7 +150,7 @@ footer {
     position: relative;
 }
 
-.tabs-menu-nav > li > a {
+.tabs-menu-nav>li>a {
     color: #fff;
     display: block;
     font-size: 30px;
@@ -159,12 +159,13 @@ footer {
     font-family: 'Tangerine', sans-serif;
 }
 
-.tabs-menu-nav > li > a.active {
+.tabs-menu-nav>li>a.active {
     opacity: 1;
     border-bottom-color: #db2e2e;
 }
 
-.media-body, p {
+.media-body,
+p {
     color: #999;
 }
 
@@ -202,16 +203,17 @@ footer {
 
 label[for="id_date_month"] {
     display: block;
- }
+}
 
- /* Contact Page */
+/* Contact Page */
 
- .contact-container h1 {
+.contact-container h1 {
     font-family: 'Tangerine', sans-serif;
     font-size: 60px;
 }
 
-.contact-container p, i {
+.contact-container p,
+i {
     font-size: 20px;
 }
 
@@ -224,4 +226,11 @@ label[for="id_date_month"] {
     min-width: 0;
     word-wrap: break-word;
     background-clip: border-box;
+}
+
+/* Profile (existing bookings page) */
+
+.profile-container h1 {
+    font-family: 'Tangerine', sans-serif;
+    font-size: 60px;
 }
