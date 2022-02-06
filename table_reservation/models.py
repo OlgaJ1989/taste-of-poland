@@ -19,8 +19,10 @@ class Table(models.Model):
 
 
 class Reservation(models.Model):
-    table = models.ForeignKey('Table', on_delete=models.CASCADE, default=None)
-    booker = models.ForeignKey(User, on_delete=models.CASCADE, default=None)
+    table = models.ForeignKey(
+        'Table', on_delete=models.CASCADE, default=None, null=True)
+    booker = models.ForeignKey(
+        User, on_delete=models.CASCADE, default=None, null=True)
     first_name = models.CharField(
         max_length=50, default=None, blank=True, null=True)
     last_name = models.CharField(
