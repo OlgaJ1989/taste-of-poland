@@ -11,7 +11,7 @@ class ReservationForm(ModelForm):
         fields = ('first_name', 'last_name', 'party_size',
                   'date', 'time', 'additional_info')
         widgets = {
-            'date': widgets.SelectDateWidget(
+            'date': widgets.SelectDateWidget(years=range(2022,2024),
                 empty_label=("Year", "Month", "Day"))
         }
 

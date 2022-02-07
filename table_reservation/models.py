@@ -24,7 +24,7 @@ class Reservation(models.Model):
     booker = models.ForeignKey(
         User, on_delete=models.CASCADE, default=None, null=True)
     first_name = models.CharField(
-        max_length=50, default=None, blank=True, null=True)
+        max_length=50, default=None, blank=True, null=True,)
     last_name = models.CharField(
         max_length=50, default=None, blank=True, null=True)
     party_size = models.IntegerField(default=1)
