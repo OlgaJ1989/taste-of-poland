@@ -24,12 +24,12 @@ class Reservation(models.Model):
     booker = models.ForeignKey(
         User, on_delete=models.CASCADE, default=None, null=True)
     first_name = models.CharField(
-        max_length=50, default=None, blank=True, null=True,)
+        max_length=50, default=None, blank=False, null=True,)
     last_name = models.CharField(
-        max_length=50, default=None, blank=True, null=True)
-    party_size = models.IntegerField(default=1)
-    date = models.DateField(blank=True, null=True)
-    time = models.TimeField(default=None, blank=True, null=True)
+        max_length=50, default=None, blank=False, null=True)
+    party_size = models.IntegerField(default=None, blank=False)
+    date = models.DateField(blank=False, null=True)
+    time = models.TimeField(default=None, blank=False, null=True)
     additional_info = models.TextField(blank=True, null=True)
     created_on = models.DateTimeField(auto_now_add=True)
     updated_on = models.DateTimeField(auto_now=True)
