@@ -14,8 +14,9 @@
             {% for reservation in reservations %}
             <div>
                 <p style="font-size: 20px">{{ reservation.id }}. 
-                    <a href="/booking_details/{{reservation.id}}">{{ reservation.first_name }} {{ reservation.last_name }} 
-                        - {{ reservation.date }} - {{ reservation.time }} - {{ reservation.party_size }}</a></p>
+                    <a href="/booking_details/{{reservation.id}}">Booking for 
+                        {{ reservation.first_name }} {{ reservation.last_name }} for 
+                        {{ reservation.date }} at {{ reservation.time }} for {{ reservation.party_size }}</a></p>
                 <a href="{% url 'update-booking' reservation.id %}" class="btn btn-primary">Edit</a>
                 <a href="{% url 'delete-booking' reservation.id %}" class="btn btn-danger">Delete</a>                
             </div>
