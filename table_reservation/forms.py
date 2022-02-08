@@ -1,6 +1,4 @@
 from django.forms import ModelForm, widgets
-from django.core.exceptions import ValidationError
-from django.utils.translation import gettext_lazy as _
 from .models import Reservation
 
 
@@ -25,14 +23,5 @@ class ReservationForm(ModelForm):
             {'class': 'form-control date-picker'})
         self.fields['time'].widget.attrs.update({'class': 'form-control'})
         self.fields['additional_info'].widget.attrs.update(
-            {'class': 'form-control', 'rows': '3', 
-            'placeholder': 'Is there anything else we need to know? Tell us!'})
-
-        #def validate_min(value):
-         #   if value < 1 or value > 4:
-          #      raise ValidationError(
-           #         _('Please choose between 1 and 4 people.'),
-            #        params={'value': value},
-             #   )
-
-        # self.fields['party_size'].validators = [validate_min]
+            {'class': 'form-control', 'rows': '3', 'placeholder':
+             'Is there anything else we need to know? Tell us!'})
