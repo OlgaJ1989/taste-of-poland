@@ -1,7 +1,7 @@
+import datetime
 from django.db import models
 from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
-import datetime
 
 
 TIME_CHOICES = (
@@ -19,9 +19,9 @@ TIME_CHOICES = (
 )
 
 PEOPLE_CHOICES = (
-    (1, "1 person"), 
+    (1, "1 person"),
     (2, "2 people"),
-    (3, "3 people"), 
+    (3, "3 people"),
     (4, "4 people"),
     (5, "5 people"),
     (6, "6 people"),
@@ -52,9 +52,12 @@ class Reservation(models.Model):
         max_length=50, default=None, blank=False, null=True,)
     last_name = models.CharField(
         max_length=50, default=None, blank=False, null=True)
-    party_size = models.IntegerField(default=None, blank=False, choices=PEOPLE_CHOICES)
-    date = models.DateField(blank=False, null=True, default=datetime.date.today)
-    time = models.TimeField(default=None, choices=TIME_CHOICES, blank=False, null=True)
+    party_size = models.IntegerField(
+        default=None, blank=False, choices=PEOPLE_CHOICES)
+    date = models.DateField(
+        blank=False, null=True, default=datetime.date.today)
+    time = models.CharField(
+        max_length=10, default=None, choices=TIME_CHOICES, blank=False, null=True)
     additional_info = models.TextField(blank=True, null=True)
     created_on = models.DateTimeField(auto_now_add=True)
     updated_on = models.DateTimeField(auto_now=True)
