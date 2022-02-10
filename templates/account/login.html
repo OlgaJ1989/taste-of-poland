@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+{% load account socialaccount %}
+
+{% block head_title %}{% trans "Sign In" %}{% endblock %}
+
+{% block content %}
+
+<div class="container text-white justify-content-center">
+  <div class="row">
+    <div class="col-12 mt-5">
+      <h1 class="text-center form-title">{% trans "Sign In" %}</h1>
+      <p class="text-center" style="font-size: 20px">{% blocktrans %}Welcome to Taste of Poland. To book a table, please
+        log in. If you don't have an account
+        yet, please <a href="{{ signup_url }}">register</a> first.{% endblocktrans %}
+      </p>
+    </div>
+  </div>
+</div>
+<div class="container text-white d-block justify-content-center">
+  <hr class="rounded mt-5 mb-5">
+  <div class="row ">
+    <div class="container form-group col-xs-8 col-sm-4 col-md-3 col-lg-3 col-xl-3">
+      <form class="login" method="POST" action="{% url 'account_login' %}">
+        {% csrf_token %}
+        {{ form.as_p }}
+        {% if redirect_field_value %}
+        <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+        {% endif %}
+        <button class="btn btn-danger" type="submit">{% trans "Sign In" %}</button>
+      </form>
+    </div>
+  </div>
+  <hr class="rounded my-5">
+</div>
+
+{% endblock %}
