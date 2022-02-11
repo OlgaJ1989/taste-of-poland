@@ -43,6 +43,7 @@ def create_booking(request):
     return render(request, 'booking_form.html', context)
 
 
+@login_required(login_url='account_login')
 def update_booking(request, pk):
     reservation = Reservation.objects.get(id=pk)
     form = ReservationForm(instance=reservation)
@@ -55,6 +56,7 @@ def update_booking(request, pk):
     return render(request, 'booking_form.html', context)
 
 
+@login_required(login_url='account_login')
 def delete_booking(request, pk):
     reservation = Reservation.objects.get(id=pk)
     if request.method == 'POST':
