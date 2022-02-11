@@ -14,7 +14,7 @@
             {% for reservation in reservations %}
             <div>
                 {% if request.user == reservation.booker %}
-                <p style="font-size: 20px">{{ reservation.id }}. 
+                <p style="font-size: 20px"> 
                     <a href="/booking_details/{{reservation.id}}">Booking for 
                         {{ reservation.first_name }} {{ reservation.last_name }} for 
                         {{ reservation.date }} at {{ reservation.time }} for {{ reservation.party_size }}</a></p>
