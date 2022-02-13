@@ -5,7 +5,7 @@ from .models import Reservation
 class ReservationForm(ModelForm):
     class Meta:
         model = Reservation
-        fields = ('first_name', 'last_name', 'party_size',
+        fields = ('table', 'first_name', 'last_name', 'party_size',
                   'date', 'time', 'additional_info')
         widgets = {
             'date': widgets.SelectDateWidget(

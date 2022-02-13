@@ -13,14 +13,17 @@
         <div class="col-12 mt-5">
             {% for reservation in reservations %}
             <div>
+
                 {% if request.user == reservation.booker %}
-                <p style="font-size: 20px"> 
-                    <a href="/booking_details/{{reservation.id}}">Booking for 
-                        {{ reservation.first_name }} {{ reservation.last_name }} for 
-                        {{ reservation.date }} at {{ reservation.time }} for {{ reservation.party_size }}</a></p>
+                <p style="font-size: 20px">
+                    <a href="/booking_details/{{reservation.id}}">Booking for
+                        {{ reservation.first_name }} {{ reservation.last_name }} for
+                        {{ reservation.date }} at {{ reservation.time }} for {{ reservation.party_size }}</a>
+                </p>
                 <a href="{% url 'update-booking' reservation.id %}" class="btn btn-primary">Edit</a>
-                <a href="{% url 'delete-booking' reservation.id %}" class="btn btn-danger">Delete</a> 
-                {% endif %}               
+                <a href="{% url 'delete-booking' reservation.id %}" class="btn btn-danger">Delete</a>
+                {% endif %}
+
             </div>
             {% endfor %}
         </div>

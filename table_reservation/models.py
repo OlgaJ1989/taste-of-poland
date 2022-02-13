@@ -37,7 +37,7 @@ PEOPLE_CHOICES = (
 
 
 class Table(models.Model):
-    # seats = models.IntegerField()
+    #seats = models.IntegerField()
     min_people = models.IntegerField()
     max_people = models.IntegerField()
 

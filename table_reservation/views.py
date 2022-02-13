@@ -37,6 +37,8 @@ def create_booking(request):
     if request.method == 'POST':
         form = ReservationForm(request.POST)
         if form.is_valid():
+            obj = form.save(commit=False)
+            obj.booker = request.user
             form.save()
             return redirect('profile')
     context = {'form': form}
