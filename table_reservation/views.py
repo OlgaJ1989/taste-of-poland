@@ -26,11 +26,6 @@ def profile(request):
     return render(request, 'profile.html', context)
 
 
-def booking_details(request, pk):
-    reservation = Reservation.objects.get(id=pk)
-    return render(request, 'booking_details.html')
-
-
 @login_required(login_url='account_login')
 def create_booking(request):
     form = ReservationForm()
@@ -65,3 +60,25 @@ def delete_booking(request, pk):
         reservation.delete()
         return redirect('profile')
     return render(request, 'delete.html', {'obj': reservation})
+
+
+
+#def check_available_rooms(date_wanted, time_wanted):
+    
+ #   date_wanted = ('date')
+  #  time_wanted = ('time')
+   # reservations = Reservation.objects.filter(date=date_wanted)
+    #count = 0
+    #capacity = 10
+   # availability = False
+   # for res in reservations:
+   #     if Reservation.date == date_wanted and Reservation.time == time_wanted:
+   #         count += 1
+   # if count < capacity:
+   #     availability = True
+   # else:
+   #     availability = False
+   #     return availability
+
+
+

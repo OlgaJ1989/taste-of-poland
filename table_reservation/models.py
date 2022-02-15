@@ -37,9 +37,11 @@ PEOPLE_CHOICES = (
 
 
 class Table(models.Model):
-    #seats = models.IntegerField()
-    min_people = models.IntegerField()
+    table_name = models.CharField(default=None, max_length=20, unique=True)
     max_people = models.IntegerField()
+
+    def __str__(self):
+        return self.table_name
 
 
 class Reservation(models.Model):
