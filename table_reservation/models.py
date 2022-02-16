@@ -46,7 +46,7 @@ class Table(models.Model):
 
 class Reservation(models.Model):
     table = models.ForeignKey(
-        'Table', on_delete=models.CASCADE, default=None, null=True)
+       'Table', on_delete=models.CASCADE, default=None, null=True)
     booker = models.ForeignKey(
         User, on_delete=models.CASCADE, default=None, null=True)
     first_name = models.CharField(

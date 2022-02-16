@@ -56,10 +56,13 @@ def update_booking(request, pk):
 @login_required(login_url='account_login')
 def delete_booking(request, pk):
     reservation = Reservation.objects.get(id=pk)
-    if request.method == 'POST':
-        reservation.delete()
-        return redirect('profile')
-    return render(request, 'delete.html', {'obj': reservation})
+    if request.user == reservation.booker:
+        if request.method == 'POST':
+            reservation.delete()
+            return redirect('profile')
+        return render(request, 'delete.html', {'obj': reservation})
+
+        # else
 
 
 
