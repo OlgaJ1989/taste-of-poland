@@ -20,6 +20,10 @@ def contact(request):
     return render(request, 'contact.html')
 
 
+def page_404(request):
+    return render(request, '404.html')
+
+
 def profile(request):
     reservations = Reservation.objects.all()
     context = {'reservations': reservations}
@@ -63,25 +67,3 @@ def delete_booking(request, pk):
         return render(request, 'delete.html', {'obj': reservation})
 
         # else
-
-
-
-#def check_available_rooms(date_wanted, time_wanted):
-    
- #   date_wanted = ('date')
-  #  time_wanted = ('time')
-   # reservations = Reservation.objects.filter(date=date_wanted)
-    #count = 0
-    #capacity = 10
-   # availability = False
-   # for res in reservations:
-   #     if Reservation.date == date_wanted and Reservation.time == time_wanted:
-   #         count += 1
-   # if count < capacity:
-   #     availability = True
-   # else:
-   #     availability = False
-   #     return availability
-
-
-

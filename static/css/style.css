@@ -236,14 +236,21 @@ i {
 }
 
 .errorlist {
-    color: red!important;
+    color: red !important;
 }
 
-/* Sign Out confirmation */
+/* Sign Out confirmation (logout.html) */
 
 .center-screen {
     display: flex;
     flex-direction: column;
     justify-content: center;
     min-height: 80vh;
-  }
+}
+
+/* 404 */
+
+.page-404 h1 {
+    font-family: 'Tangerine', sans-serif;
+    font-size: 200px;
+}
