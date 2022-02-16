@@ -1,6 +1,5 @@
 {% load static %}
 
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,20 +9,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A traditional Polish restaurant in the centre of Brighton">
     <meta name="keywords" content="brighton, restaurant, polish">
+    <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="{% static 'images/favicon/apple-touch-icon.png' %}">
     <link rel="icon" type="image/png" sizes="32x32" href="{% static 'images/favicon/favicon-32x32.png' %}">
     <link rel="icon" type="image/png" sizes="16x16" href="{% static 'images/favicon/favicon-16x16.png' %}">
-    <link rel="manifest" href="{% static 'images/favicon/site.webmanifest' %}"> 
+    <link rel="manifest" href="{% static 'images/favicon/site.webmanifest' %}">
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
     <title>Taste of Poland</title>
 </head>
 
 <body>
     <header>
+        <!-- Navbar -->
         <nav class="navbar navbar-dark navbar-expand-sm" style="background-color: #fc0303;">
             <a href="/" class="navbar-brand" id="my-logo">Taste of Poland</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
@@ -67,6 +71,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 offset-md-2">
+                <!-- Login / Logout notification -->
                 {% for message in messages %}
                 <div class="alert {{ message.tags }} alert-dismissible fade show" id="msg" role="alert">
                     {{ message | safe }}
@@ -83,15 +88,16 @@
 
     {% endblock %}
 
+    <!-- Footer -->
     <footer class="position-sticky">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <ul class="social-media">
+                    <ul class="social-media pl-0 ml-0">
                         <li>
                             <a href="https://en-gb.facebook.com/" target="_blank" rel="noopener"
                                 aria-label="Visit our Facebook page (opens in a new tab)"><i
-                                    class="fab fa-facebook"></i></a>
+                                    class="fab fa-facebook "></i></a>
                         </li>
                         <li>
                             <a href="https://twitter.com/?lang=en-gb" target="_blank" rel="noopener"
