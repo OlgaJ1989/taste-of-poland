@@ -41,12 +41,10 @@ class Table(models.Model):
     max_people = models.IntegerField()
 
     def __str__(self):
-        return self.table_name
+        return str(self.table_name)
 
 
 class Reservation(models.Model):
-    table = models.ForeignKey(
-       'Table', on_delete=models.CASCADE, default=None, null=True)
     booker = models.ForeignKey(
         User, on_delete=models.CASCADE, default=None, null=True)
     first_name = models.CharField(
@@ -60,6 +58,8 @@ class Reservation(models.Model):
     time = models.CharField(
         max_length=10, default="12:00", choices=TIME_CHOICES, blank=False,
         null=True)
+    table = models.ForeignKey(
+       'Table', on_delete=models.CASCADE, default=None, null=True)
     additional_info = models.TextField(blank=True, null=True)
     created_on = models.DateTimeField(auto_now_add=True)
     updated_on = models.DateTimeField(auto_now=True)

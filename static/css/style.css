@@ -1,5 +1,7 @@
 body {
-    Background-color: black;
+    background-color: black;
+    padding-top: 98px;
+    padding-bottom: 80px;
 }
 
 
@@ -25,7 +27,7 @@ h5 {
 /* Footer */
 
 footer {
-    height: auto;
+    height: 80px;
     background-color: red;
     padding-top: 15px;
     padding-bottom: 5px;
