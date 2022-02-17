@@ -7,8 +7,7 @@ from .models import Reservation
 
 class ReservationForm(ModelForm):
     """
-    Data for the table booking model form.
-    and widgets to be displayed.
+    Data for the table booking model form and widgets to be displayed.
     """
     class Meta:
         """
