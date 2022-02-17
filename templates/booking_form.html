@@ -2,6 +2,7 @@
 
 {% block content %}
 
+<!-- Page with form allowing user to book a table -->
 <div class="container text-white justify-content-center">
     <div class="row">
         <div class="col-12 mt-5">
@@ -11,6 +12,7 @@
         </div>
     </div>
     <hr class="rounded mt-5 mb-5">
+    <!-- Table booking form -->
     <div class="container form-group col-xs-10 col-sm-6 col-md-8 col-lg-6 col-xl-5">
         <form method="POST" action="">
             {% csrf_token %}
