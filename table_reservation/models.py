@@ -1,3 +1,6 @@
+"""
+File specyfying what models can be found in the database.
+"""
 import datetime
 from django.db import models
 from django.contrib.auth.models import User
@@ -37,6 +40,7 @@ PEOPLE_CHOICES = (
 
 
 class Table(models.Model):
+    """ Model storing the restaurant's tables information """
     table_name = models.CharField(default=None, max_length=20, unique=True)
     max_people = models.IntegerField()
 
@@ -45,6 +49,7 @@ class Table(models.Model):
 
 
 class Reservation(models.Model):
+    """ Reservation model storing the booking details """
     booker = models.ForeignKey(
         User, on_delete=models.CASCADE, default=None, null=True)
     first_name = models.CharField(
@@ -65,11 +70,13 @@ class Reservation(models.Model):
     updated_on = models.DateTimeField(auto_now=True)
 
     class Meta:
+        """
+        Meta specifying how bookings should be ordered.
+        """
         ordering = ['-updated_on', '-created_on']
 
     def __str__(self):
-        return '%s %s %s %s' % (
-            self.first_name, self.last_name, self.date, self.time)
+        return str(self.first_name, self.last_name, self.date, self.time)
 
 
 # class Reservation(models.Model):

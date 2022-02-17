@@ -1,9 +1,19 @@
+"""
+File specyfying what forms can be found on the website and their settings.
+"""
 from django.forms import ModelForm, widgets
 from .models import Reservation
 
 
 class ReservationForm(ModelForm):
+    """
+    Data for the table booking model form.
+    and widgets to be displayed.
+    """
     class Meta:
+        """
+        Meta class specifying fields and widgets to be displayed.
+        """
         model = Reservation
         fields = ('first_name', 'last_name', 'party_size',
                   'date', 'time', 'table', 'additional_info')
