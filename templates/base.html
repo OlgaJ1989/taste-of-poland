@@ -45,6 +45,11 @@
                     <li class="nav-item mr-2">
                         <a class="nav-link" href="{% url 'create-booking' %}">Book</a>
                     </li>
+                    {% if user.is_authenticated %}
+                    <li class="nav-item mr-2">
+                        <a class="nav-link" href="{% url 'profile' %}">My Bookings</a>
+                    </li>
+                    {% endif %}
                     <li class="nav-item mr-2">
                         <a class="nav-link" href="{% url 'gallery' %}">Gallery</a>
                     </li>
