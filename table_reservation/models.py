@@ -76,7 +76,7 @@ class Reservation(models.Model):
         ordering = ['-updated_on', '-created_on']
 
     def __str__(self):
-        return f"{self.date}, {self.time} - booking for {self.first_name}\
+        return f"{self.date}, {self.time} - {self.first_name}\
             {self.last_name} - party of {self.party_size}"
 
 

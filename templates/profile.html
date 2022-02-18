@@ -15,7 +15,7 @@
             <div>
                 {% if request.user == reservation.booker %}
                 <p style="font-size: 20px">{{ reservation.id }}. {{ reservation.date }}
-                    at {{ reservation.time }} - booking for {{ reservation.first_name }}
+                    at {{ reservation.time }} - {{ reservation.first_name }}
                     {{ reservation.last_name }} - party of {{ reservation.party_size }}.
                 </p>
                 <a href="{% url 'update-booking' reservation.id %}" class="btn btn-primary">Edit</a>

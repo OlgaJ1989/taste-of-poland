@@ -2,12 +2,15 @@
 
 {% block content %}
 
-<form method="POST" action="">
-    {% csrf_token %}
-    <p>Are you sure you want to delete your booking for "{{obj}}"?<p>
-        <a href="{{request.META.HTTP_REFERER}}" class="btn btn-danger">Go Back</a>
-        <input class="btn btn-success" type="submit" value="Confirm">
-        
-</form>
+<div class="container center-screen text-white">
+    <div class="row">
+        <div class="col-12 mt-5 text-center">
+            <form method="POST" action="">
+                {% csrf_token %}
+                <p style="font-size: 20px">Are you sure you want to delete your booking for "{{obj}}"?<p>
+                    <a href="{{request.META.HTTP_REFERER}}" class="btn btn-danger">No! Go Back</a>
+                    <input class="btn btn-success" type="submit" value="Confirm">
+            </form>
 
 {% endblock %}
+
