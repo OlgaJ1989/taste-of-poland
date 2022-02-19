@@ -4,7 +4,7 @@ Taste of Poland is a restaurant website designed to allow customers to book, edi
 
 The website can be accessed [here](https://olgaj1989.github.io/sussex-walks/).
 
-![Mockup](https://github.com/OlgaJ1989/sussex-walks/blob/master/docs/mockup.png)
+![Mockup](https://github.com/OlgaJ1989/taste-of-poland/static/images/readme/mockup.jpg)
 
 ## Features
 
