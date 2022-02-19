@@ -1,6 +1,4 @@
-"""
-File specyfying what models can be found in the database.
-"""
+""" File specyfying what models can be found in the database. """
 import datetime
 from django.db import models
 from django.contrib.auth.models import User
@@ -70,9 +68,7 @@ class Reservation(models.Model):
     updated_on = models.DateTimeField(auto_now=True)
 
     class Meta:
-        """
-        Meta specifying how bookings should be ordered.
-        """
+        """Meta specifying how bookings should be ordered."""
         ordering = ['-updated_on', '-created_on']
 
     def __str__(self):
