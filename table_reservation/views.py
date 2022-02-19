@@ -48,7 +48,9 @@ def create_booking(request):
             obj = form.save(commit=False)
             obj.booker = request.user
             form.save()
-            messages.add_message(request, messages.SUCCESS, "You have successfully booked your table.")
+            messages.add_message(
+                request, messages.SUCCESS, "You have successfully booked \
+                    your table.")
             return redirect('profile')
     context = {'form': form}
     return render(request, 'booking_form.html', context)
