@@ -4,7 +4,7 @@ Taste of Poland is a restaurant website designed to allow customers to book, edi
 
 The website can be accessed [here](https://olgaj1989.github.io/sussex-walks/).
 
-![Mockup](https://github.com/OlgaJ1989/taste-of-poland/static/images/readme/mockup.jpg)
+![Mockup](https://github.com/OlgaJ1989/taste-of-poland/blob/main/static/images/readme/mockup.jpg)
 
 ## Features
 
@@ -12,8 +12,13 @@ The website can be accessed [here](https://olgaj1989.github.io/sussex-walks/).
 
 * Navigation Bar 
     * Includes direct links to all parts of the website, allowing the user to easily navigate between them. 
+        1. When logged OUT, the user can see the following links in the navbar: Home, Menu, Book, Gallery, Contact, Register, Login.
 
-    ![Navigation](https://github.com/OlgaJ1989/sussex-walks/blob/master/docs/navigation.png)
+        ![Navigation1](https://github.com/OlgaJ1989/taste-of-poland/blob/main/static/images/readme/logged-out.PNG)
+
+        2. When logged IN, the user can see the following links in the navbar: Home, Menu, Book, My Bookings, Gallery, Contact, Logout.  
+
+        ![Navigation2](https://github.com/OlgaJ1989/taste-of-poland/blob/main/static/images/readme/logged-in.PNG)
 
 * Landing page image with overlaying page title
     * The home.html page (Home) includes a picture of the countryside, with the title of the wesbsite, Sussex Walks, added as overlaying text. The title acts as a centerpiece of the image and catches the eye instantly.
