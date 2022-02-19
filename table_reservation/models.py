@@ -70,7 +70,7 @@ class Reservation(models.Model):
     updated_on = models.DateTimeField(auto_now=True)
 
     class Meta:
-        """Meta specifying how bookings should be ordered."""
+        """Meta class specifying how bookings should be ordered."""
         ordering = ['-updated_on', '-created_on']
 
     def __str__(self):

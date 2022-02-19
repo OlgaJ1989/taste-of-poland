@@ -49,8 +49,7 @@ def create_booking(request):
             obj.booker = request.user
             form.save()
             messages.add_message(
-                request, messages.SUCCESS, "You have successfully booked \
-                    your table.")
+                request, messages.SUCCESS, "Booking created successfully.")
             return redirect('profile')
     context = {'form': form}
     return render(request, 'booking_form.html', context)
@@ -66,6 +65,8 @@ def update_booking(request, pk):
             form = ReservationForm(request.POST, instance=reservation)
             if form.is_valid():
                 form.save()
+                messages.add_message(request, messages.SUCCESS, "Your \
+                    changes have been saved.")
                 return redirect('profile')
         context = {'form': form}
         return render(request, 'booking_form.html', context)
@@ -83,6 +84,7 @@ def delete_booking(request, pk):
     if request.user == reservation.booker:
         if request.method == 'POST':
             reservation.delete()
+            messages.add_message(request, messages.SUCCESS, "Booking deleted.")
             return redirect('profile')
         return render(request, 'delete.html', {'obj': reservation})
     else:
