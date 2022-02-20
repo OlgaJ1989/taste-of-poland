@@ -12,38 +12,45 @@ The website can be accessed [here](https://olgaj1989.github.io/sussex-walks/).
 
 * Navigation Bar 
     * Includes direct links to all parts of the website, allowing the user to easily navigate between them. 
-        1. When logged OUT, the user can see the following links in the navbar: Home, Menu, Book, Gallery, Contact, Register, Login.
+        1. When clicked, the logo leads to the home page.
+        
+        2. When logged OUT, the user can see the following links in the navbar: Home, Menu, Book, Gallery, Contact, Register, Login.
 
         ![Navigation1](https://github.com/OlgaJ1989/taste-of-poland/blob/main/static/images/readme/logged-out.PNG)
 
-        2. When logged IN, the user can see the following links in the navbar: Home, Menu, Book, My Bookings, Gallery, Contact, Logout.  
+        3. When logged IN, the user can see the following links in the navbar: Home, Menu, Book, My Bookings, Gallery, Contact, Logout.  
 
         ![Navigation2](https://github.com/OlgaJ1989/taste-of-poland/blob/main/static/images/readme/logged-in.PNG)
 
-* Landing page image with overlaying page title
-    * The home.html page (Home) includes a picture of the countryside, with the title of the wesbsite, Sussex Walks, added as overlaying text. The title acts as a centerpiece of the image and catches the eye instantly.
+        4. On smaller devices the menu links scale down to a toggler, allowing for a cleaner design.
 
-    ![Title](https://github.com/OlgaJ1989/sussex-walks/blob/master/docs/title.png)
+        ![Navigation3](https://github.com/OlgaJ1989/taste-of-poland/blob/main/static/images/readme/responsive-menu.PNG)
+       
 
-* Intro
-    * A small section explaining the purpose of the website and the type of walks people can find in Sussex. 
+* Landing page image with overlaying jumbotron
+    * The index.html page (Home) includes a background picture inspired by Polish folk art, with a one-sentence description of the website and a button leading directly to a booking page (if logged in) or to the login page (if logged out).
+    
+    ![Jumbotron](https://github.com/OlgaJ1989/taste-of-poland/blob/main/static/images/readme/jumbotron.PNG)
 
-    ![Intro](https://github.com/OlgaJ1989/sussex-walks/blob/master/docs/intro.png)
+* About Us section
+    * A small section containing a short description of the restaurant. 
 
-* Popular Walks section
-    * A section describing four chosen walks with images from along the routes and embedded Google maps for each. The images clearly showcase the landmarks walkers can expect to see and the clickable maps provide the exact route. The design is responsive - users will see 4 columns next to each other on bigger screens and 1 column at a time on smaller devices.
+    ![About](https://github.com/OlgaJ1989/taste-of-poland/blob/main/static/images/readme/about-us.PNG)
 
-    ![Walks](https://github.com/OlgaJ1989/sussex-walks/blob/master/docs/walks.png)
+* Cards section with links to Gallery and Menu pages
+    * A section containing of two cards with links to the two pages, catching the eye and allowing quick navigation. The design is responsive - users will see 2 cards next to each other on bigger screens and 1 card on top of the other on smaller devices. 
+
+    ![Cards](https://github.com/OlgaJ1989/taste-of-poland/blob/main/static/images/readme/cards.PNG)
 
 * Interactive footer across all pages
-    * It consists of clickable icons linking the user to a choice of social media platforms (Facebook, Instagram, YouTube, Twitter). All links open in new tabs so the user does not have to leave the Sussex Walks page.
+    * It consists of clickable icons linking the user to a choice of social media platforms (Facebook, Twitter, Instagram). All links open in new tabs so the user does not have to leave the Sussex Walks page.
 
-    ![Footer](https://github.com/OlgaJ1989/sussex-walks/blob/master/docs/footer.png)
+    ![Footer](https://github.com/OlgaJ1989/taste-of-poland/blob/main/static/images/readme/footer.PNG)
 
 * Gallery
-    * The Gallery located in gallery.html will provide the user with a collection of photographs showcasing landmarks they will be able to see during their walks. Responsive design of the gallery means the images will still be viewed in a good reolution on a smaller screen.
+    * The Gallery located in gallery.html will provide the user with a collection of photographs showcasing some of the dishes served in the restaurant. Responsive design of the gallery means the images will still be viewed in a good reolution on a smaller screen.
 
-    ![Gallery](https://github.com/OlgaJ1989/sussex-walks/blob/master/docs/gallery.png)  
+    ![Gallery](https://github.com/OlgaJ1989/taste-of-poland/blob/main/static/images/readme/gallery.PNG)  
 
 * Contact Us form
     * The contact.html page consists of a form which users can use in order to contact the admin with any questions / queries. 
