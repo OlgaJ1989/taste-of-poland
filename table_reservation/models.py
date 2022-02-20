@@ -4,7 +4,7 @@ from django.db import models
 from django.contrib.auth.models import User
 
 
-tom = datetime.datetime.now() + datetime.timedelta(hours=24)
+tomorrow = datetime.datetime.now() + datetime.timedelta(hours=24)
 
 TIME_CHOICES = (
     ("12:00", "12:00"),
@@ -59,7 +59,7 @@ class Reservation(models.Model):
     party_size = models.IntegerField(
         default=1, blank=False, choices=PEOPLE_CHOICES)
     date = models.DateField(
-        blank=False, null=True, default=tom)
+        blank=False, null=True, default=tomorrow)
     time = models.CharField(
         max_length=10, default="12:00", choices=TIME_CHOICES, blank=False,
         null=True)
