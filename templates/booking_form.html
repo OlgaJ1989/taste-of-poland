@@ -18,9 +18,9 @@
         <form method="POST" action="">
             {% csrf_token %}
             {{form.as_p}}
-            <section class="text-center pt-3">
-                <input type="submit" type="button" class="btn btn-danger" value="Submit" />
-            </section>
+            <div class="text-center pt-3">
+                <input type="submit" class="btn btn-danger" value="Submit" />
+            </div>
         </form>
     </div>
     <hr class="rounded my-5">

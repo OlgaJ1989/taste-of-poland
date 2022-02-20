@@ -132,7 +132,7 @@ TO UPDATE
 * Check that the links in the navigation bar navigate to correct pages. 
     * Test:
         1. Open the website in a browser.
-        1. Click on all navigation items (Home, Walking Tips, Gallery, Contact Us) one by one to make sure the attached links are correct and that they lead the user to the correct parts of the website.
+        1. Click on all navigation items one by one to make sure the attached links are correct and that they lead the user to the correct parts of the website.
     * Result:
         * All links working and directing user to the correct pages.
 
@@ -143,21 +143,7 @@ TO UPDATE
     * Result:
         * All links are working and all of them open in separate / new tabs.
 
-* Check that the name of the page user is currently on is highlighted (underlined) in the navigation bar.
-    * Test:
-        1. Open the website.
-        1. Open each of the pages in the navigation bar to see whether the active page is underlined in the menu.
-    * Result:
-        * Each of the navigation bar elements becomes underlined when the page is active.
-    
-* Check that each of the navigation bar elements displays as underlined when hovered over.
-    * Test:
-        1. Open the website.
-        1. Hover over each of the navigation bar elements with the cursor to make sure that they display and underline when hovered over. 
-    * Result:
-        * Each element becomes udenrlined when hovered over with a mouse cursor.
-                
-* Check validation of the Contact Us form.
+* Check validation of the Reservation form.
     * Test:
         1. Open the website in a browser and navigate to the Contact Us page.
         1. Fill in the form leaving different input areas empty each time to make sure there is a warning message displayed each time you leave any of the fields empty. 
