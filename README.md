@@ -2,7 +2,7 @@
 
 Taste of Poland is a restaurant website designed to allow customers to book, edit and delete tables through a custom booking form. Users can also view the menu, gallery and the venue's contact details.
 
-The website can be accessed [here](https://olgaj1989.github.io/sussex-walks/).
+TO UPDATE: The website can be accessed [here](https://olgaj1989.github.io/sussex-walks/).
 
 ![Mockup](https://github.com/OlgaJ1989/taste-of-poland/blob/main/static/images/readme/mockup.jpg)
 
@@ -47,24 +47,54 @@ The website can be accessed [here](https://olgaj1989.github.io/sussex-walks/).
 
     ![Footer](https://github.com/OlgaJ1989/taste-of-poland/blob/main/static/images/readme/footer.PNG)
 
-* Gallery
-    * The Gallery located in gallery.html will provide the user with a collection of photographs showcasing some of the dishes served in the restaurant. Responsive design of the gallery means the images will still be viewed in a good reolution on a smaller screen.
+* Menu page
+    * The Menu located in menu.html will provide the user with a list of dishes that can be ordered at the restaurant along with their prices. It consists of 3 tabs (Soups, Mains, Desserts) that can be easily switched between. 
+
+    ![Menu](https://github.com/OlgaJ1989/taste-of-poland/blob/main/static/images/readme/menu.PNG) 
+
+* Gallery page
+    * The Gallery located in gallery.html will provide the user with a collection of photographs showcasing some of the dishes served in the restaurant. Responsive design of the gallery means the images will still be viewed in a good resolution on a smaller screen.
 
     ![Gallery](https://github.com/OlgaJ1989/taste-of-poland/blob/main/static/images/readme/gallery.PNG)  
 
-* Contact Us form
-    * The contact.html page consists of a form which users can use in order to contact the admin with any questions / queries. 
+* Contact page
+    * The contact.html page consists of restaurant contact info (phone, address, email) and an embedded Google map with the location. 
     
-    ![Form](https://github.com/OlgaJ1989/sussex-walks/blob/master/docs/form.png)
+    ![Contact](https://github.com/OlgaJ1989/taste-of-poland/blob/main/static/images/readme/contact.PNG)
+
+* Reservation / booking page
+    * The 'Book' tab links with a page that consists of a reservation / booking form which allows the user to book a table for a chosen date and time up to a day before and for up to 6 guests.  
+    
+    ![Reservation](https://github.com/OlgaJ1989/taste-of-poland/blob/main/static/images/readme/booking-form.PNG)
+
+* My Bookings page
+    * The 'My Bookings' tab display all the bookings that the user has made. It only shows bookings made by the person who is currently logged in. From here the user can edit and delete existing bookings.      
+    
+    ![Bookings](https://github.com/OlgaJ1989/taste-of-poland/blob/main/static/images/readme/bookings.PNG)
+
+* Deletion confirmation page
+    * A template that renders after the user chooses to delete a booking, giving them a chance to confirm their choice or go back to safety.      
+    
+    ![Delete](https://github.com/OlgaJ1989/taste-of-poland/blob/main/static/images/readme/delete.PNG)
+
+* Sign In / Login page
+    * Allows the user to log in to an existing account in order to book a table and view existing bookings. It also provides the user with the link to register.      
+    
+    ![Bookings](https://github.com/OlgaJ1989/taste-of-poland/blob/main/static/images/readme/sign-in.PNG)
+
+* Sign out / Logout confirmation page
+    * A template that renders after the user chooses to log out, giving them a chance to confirm in case they clicked the link by mistake.       
+    
+    ![SignOut](https://github.com/OlgaJ1989/taste-of-poland/blob/main/static/images/readme/sign-out-confirm.PNG)
 
 * A favicon
-    * A favicon has been added to make it easier for users to find the Sussex Walks page if multiple tabs are open. 
+    * A favicon has been added to make it easier for users to find the Taste of Poland page if multiple tabs are open. 
     
-    ![Favicon](https://github.com/OlgaJ1989/sussex-walks/blob/master/docs/favicon.png)
+    ![Favicon](https://github.com/OlgaJ1989/taste-of-poland/blob/main/static/images/readme/favicon.PNG)
 
 ### Features left to implement
 
-I would like to include another page consisting of a form and called Design Your Walk or similar. The form would consist of a short survey, covering areas such as difficulty, length, and type of a walk. Radio buttons and checkboxes would be provided for the user to be able to make their choices, which they could then submit to the admin to receive personalised walk ideas tailored to their choices.  
+TO UPDATE 
 
 ## Technologies
 
