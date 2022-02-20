@@ -19,16 +19,16 @@ h5 {
 
 /* Navbar */
 
-#my-logo {
+#my-logo h1 {
     font-family: 'Tangerine', sans-serif;
-    font-size: 48px;
+    font-size: 45px;
 }
 
 /* Footer */
 
 footer {
     height: 80px;
-    background-color: red;
+    background-color: #d40b0b;
     padding-top: 15px;
     padding-bottom: 5px;
     width: 100%;
@@ -192,6 +192,11 @@ p {
     border-style: solid;
     background-color: black;
     color: white;
+}
+
+.card h2 {
+    font-family: 'Tangerine', sans-serif;
+    font-size: 50px;
 }
 
 /* Booking form */

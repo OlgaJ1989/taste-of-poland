@@ -28,8 +28,8 @@
 <body>
     <header>
         <!-- Navbar -->
-        <nav class="navbar navbar-dark navbar-expand-sm fixed-top" style="background-color: #fc0303;">
-            <a href="/" class="navbar-brand" id="my-logo">Taste of Poland</a>
+        <nav class="navbar navbar-dark navbar-expand-sm fixed-top" style="background-color: #d40b0b;">
+            <a href="/" class="navbar-brand pt-3" id="my-logo"><h1>Taste of Poland</h1></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
                 aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -37,7 +37,7 @@
             <div class="collapse navbar-collapse" id="navbarToggler">
                 <ul class="navbar-nav ml-auto">
                     <li class="active nav-item mr-2">
-                        <a class="nav-link" href="/">Home</a>
+                        <a class="nav-link" href="{% url 'home' %}">Home</a>
                     </li>
                     <li class="nav-item mr-2">
                         <a class="nav-link" href="{% url 'menu' %}">Menu</a>

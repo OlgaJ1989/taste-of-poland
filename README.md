@@ -87,6 +87,11 @@ TO UPDATE: The website can be accessed [here](https://olgaj1989.github.io/sussex
     
     ![SignOut](https://github.com/OlgaJ1989/taste-of-poland/blob/main/static/images/readme/sign-out-confirm.PNG)
 
+*  404 page
+    * A custom 404 page has been made to make it easy for the user to come back to the game page after they tried to move to a non-existent page.
+
+    ![404](https://github.com/OlgaJ1989/taste-of-poland/blob/main/static/images/readme/404.PNG)
+
 * A favicon
     * A favicon has been added to make it easier for users to find the Taste of Poland page if multiple tabs are open. 
     
@@ -98,17 +103,18 @@ TO UPDATE
 
 ## Technologies
 
-* HTML has been used to structure the website.
-* CSS has been used to style the website.
-* [Font Awesome](https://fontawesome.com/) icons have been used on the Walking Tips page and for social media links in the Footer.    
-* [Google Fonts](https://fonts.google.com/) have been used to import Amatic SC and Josefin Slab fonts. 
-* [Colormind](http://colormind.io) was used to determine the color pallette for the website.
-* [Hex Color Tool](https://www.hexcolortool.com/) was used to convert Hex to RGBA.
+* [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) has been used to structure the website.
+* [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) has been used to style the website.
+* [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) was used to tweak the settings of login / logout notifications / messages.
+* [Python](https://www.python.org/) was used as the main language in which this project was coded.
+* [Django](https://www.djangoproject.com/) was the framework used to build this website.
+* [Font Awesome](https://fontawesome.com/) icons have been used for the social media links in the Footer and on the Contact page.    
+* [Google Fonts](https://fonts.google.com/) have been used to import Tangerine and Roboto Slab fonts. 
 * [Favicon](https://favicon.io/) was used to create the favicon for the website.
-* [Techsini](http://techsini.com/multi-mockup/index.php) mockup generator was used to create the mockup image for the readme.md file. 
+* [Am I Responsive](http://ami.responsivedesign.is/#) mockup generator was used to create the mockup image for the readme.md file. 
 * [Google Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools) were used to inspect elements of the website and test different styles. 
 * [GitHub](https://github.com/) has been used to store the code, images, and other contents of the website. 
-* [Git Pages](https://pages.github.com/) was used to deploy the website to the web.
+* [Heroku](https://dashboard.heroku.com/apps) was used to deploy the game to the web.
 * [Git](https://git-scm.com/) was used to track changes made to the project and to commit and push code to the repository.
 * [Wave Web Accessibility Evaluation Tool](https://wave.webaim.org) was used to test the website's accessibility.
 * [Lighthouse](https://developers.google.com/web/tools/lighthouse#devtools) was used to run an audit of the website. 
