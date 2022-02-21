@@ -12,7 +12,7 @@ class ReservationForm(ModelForm):
                   'date', 'time', 'table', 'additional_info')
         widgets = {
             'date': widgets.SelectDateWidget(
-                years=range(2022, 2024), empty_label=("Year", "Month", "Day"))
+                years=range(2022, 2024), empty_label=("Year"))
         }
 
     def __init__(self, *args, **kwargs):
@@ -26,6 +26,7 @@ class ReservationForm(ModelForm):
             {'class': 'form-control'})
         self.fields['date'].widget.attrs.update(
             {'class': 'form-control date-picker'})
+        self.fields['date'].required = False
         self.fields['time'].widget.attrs.update({'class': 'form-control'})
         self.fields['table'].widget.attrs.update(
             {'class': 'form-control'})

@@ -1,7 +1,10 @@
 body {
     background-color: black;
     padding-top: 98px;
-    padding-bottom: 80px;
+    /*padding-bottom: 80px;*/
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -19,9 +22,14 @@ h5 {
 
 /* Navbar */
 
-#my-logo h1 {
+.navbar {
+    padding-bottom: 2px;
+    padding-top: 2px;
+}
+
+#my-logo {
     font-family: 'Tangerine', sans-serif;
-    font-size: 45px;
+    font-size: 40px;
 }
 
 /* Footer */
@@ -35,6 +43,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: auto;
 }
 
 .social-media {
@@ -255,7 +264,7 @@ i {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 80vh;
+    /*min-height: 80vh;*/
 }
 
 /* 404 */
