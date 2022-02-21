@@ -111,7 +111,7 @@ footer {
 
 /* Menu */
 
-.menu-container h2 {
+.menu-container h1 {
     font-family: 'Tangerine', sans-serif;
     font-size: 60px;
     padding-top: 50px;
@@ -147,7 +147,7 @@ footer {
     top: 50%;
 }
 
-.food-menu-card .media h3 {
+.food-menu-card .media h2 {
     position: relative;
     display: inline-block;
     margin-bottom: 0;
