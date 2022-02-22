@@ -154,9 +154,10 @@ TO UPDATE
 
 * HTML - when the code was passed through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcode-institute-org.github.io%2Flove-running-2.0%2Findex.html) I have received the following error notification: "Element h3 not allowed as child of element label in this context." referring to all input labels in the Contact Us form. To fix this, I have changed all h3 elements to span elements as per the advice found in [this Stackoverflow post](https://stackoverflow.com/questions/50068995/element-h3-not-allowed-as-child-of-element-label-in-this-context-html). No further errors have been found after I applied this fix and passed the code through the validator again.
 * CSS - no errors were found when code was passed through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%3Fdoc%3Dhttps%253A%252F%252Fcode-institute-org.github.io%252Flove-running-2.0%252Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#css)
-* Accessibility - when using the [Wave Web Accessibility Evaluation Tool](https://wave.webaim.org) to test the site's accessibility, I received 2 errors:
-    * There was not enough contrast between the background and font of the 'Submit' button in the Contact Us form. I have corrected this by changing the background color #559e79 to #32644b. No further errors have been found after I applied this fix and passed the site through the validator again.
-    * Two of the aria-labels in the Gallery page were identical. I have corrected this by changing the name of one of them. No further errors have been found after I applied thise fix and passed the site through the validator again.
+* Accessibility - when using the [Wave Web Accessibility Evaluation Tool](https://wave.webaim.org) to test the site's accessibility, I have encountered 2 errors:
+    * I skipped a heading level on the menu.html page (I used h1 and h3, leaving out h2). I fixed this by changing the h3 elements to h2. No further errors have been found after I applied this fix and passed the site through the validator again. 
+    * There was not enough contrast between the navbar background and the font of its elements. I have corrected this by changing the basic background color of 'red' to a slightly deeper #d40b0b. No further errors have been found after I applied this fix and passed the site through the validator again.
+    * Aria-labels in the Gallery page were missing. I have added them to all images. No further errors have been found after I applied this fix and passed the site through the validator again.
 
 ### Unfixed bugs
 
@@ -164,28 +165,30 @@ No other bugs found.
 
 ## Deployment
 
-Sussex Walks was deployed to GitHub Pages by following the below steps:
-1. Navigate to the ['sussex-walks' repository](https://github.com/OlgaJ1989/sussex-walks) on GitHub.
-1. Navigate to the 'Settings' tab.
-1. Navigate to 'Pages' from the menu on the left. 
-1. Select 'master' branch in the source drop-down.
-1. Click 'Save'.
-1. A link to the live deployed page is generated and can be found here: https://olgaj1989.github.io/sussex-walks/
+The below steps were followed to deploy this project to Heroku:
+1. Go to [Heroku](https://dashboard.heroku.com/apps) and click "New" to create a new app.
+2. After choosing the app name and setting the region, press "Create app".
+3. Go to "Settings" and navigate to Config Vars. Add a Config Var with a key word of called PORT and a value of 8000.
+4. Still in the "Settings", navigate to Buildpacks and add buildpacks for Python and NodeJS (in order).
+5. Leave "Settings" and go to "Deploy". Scroll down and set Deployment Method to GitHub.
+Once GitHub is chosen, find your repository and connect it to Heroku.
+6. Scroll down to Manual Deploy, make sure the "main" branch is selected and click "Deploy Branch". 
+7. The deployed app can be found [here](https://stranded.herokuapp.com/).
 
 ## Credits
 
 ### Content 
 
-The written content has been developed by me, Olga Jasinska, using my past experience of walking in and around of Brighton. 
+All the general 'blurb' across the website has been written by me, apart from the names and descriptions of the dishes in the Menu. These have been taken and adapted from [StayPoland](https://www.staypoland.com/poland/polish-food/).
 
 ### Media 
 
-All photos have been taken from my private collection or provided by my partner Ben Butler with his permission. 
+All photos / images have been taken from [ShutterStock](https://www.shutterstock.com/.)
 
 ### Code
 
-When creating flexbox and media queries I used tutorials and some base code from [W3Schools](https://www.w3schools.com/css/css3_flexbox.asp) modules on CSS Flexbox and CSS Flex Responsive.  
+I have used this code snippet from [Bootdey](https://www.bootdey.com/snippets/view/bs4-Food-Menu) to create the Menu page.
 
 ### Acknowledgements
 
-I'd like to thank my mentor Daisy McGirr for her guidance throughout this project.
+As always, I'd like to thank my mentor Daisy McGirr for her guidance throughout this project. 
