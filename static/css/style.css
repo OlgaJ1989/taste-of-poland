@@ -247,6 +247,10 @@ i {
     background-clip: border-box;
 }
 
+iframe {
+    width: 100%;
+}
+
 /* Profile (existing bookings page) */
 
 .profile-container h1 {
