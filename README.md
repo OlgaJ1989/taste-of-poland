@@ -16,11 +16,11 @@ TO UPDATE: The website can be accessed [here](https://olgaj1989.github.io/sussex
         
         2. When logged OUT, the user can see the following links in the navbar: Home, Menu, Reservations (with a Reserve A Table dropdown), Gallery, Contact, Register, Login.
 
-        ![Navigation1](https://github.com/OlgaJ1989/taste-of-poland/blob/main/static/images/readme/logged-out.PNG)
+        ![Navigation1](https://github.com/OlgaJ1989/taste-of-poland/blob/main/static/images/readme/logged-out-new.PNG)
 
         3. When logged IN, the user can see the following links in the navbar: Home, Menu, Reservations (with Reserve A Table and My Reservations dropdowns), Gallery, Contact, Logout.  
 
-        ![Navigation2](https://github.com/OlgaJ1989/taste-of-poland/blob/main/static/images/readme/logged-in.PNG)
+        ![Navigation2](https://github.com/OlgaJ1989/taste-of-poland/blob/main/static/images/readme/logged-in-new.PNG)
 
         4. On smaller devices the menu links scale down to a toggler, allowing for a cleaner design.
 
