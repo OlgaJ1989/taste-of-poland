@@ -101,6 +101,7 @@ TO UPDATE: The website can be accessed [here](https://olgaj1989.github.io/sussex
 
 TO UPDATE 
 
+
 ## Technologies
 
 * [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) has been used to structure the website.
@@ -119,6 +120,7 @@ TO UPDATE
 * [Wave Web Accessibility Evaluation Tool](https://wave.webaim.org) was used to test the website's accessibility.
 * [Lighthouse](https://developers.google.com/web/tools/lighthouse#devtools) was used to run an audit of the website. 
 
+
 ## Testing
 
 * Check the responsiveness of the website on different screen sizes across different browsers (Chrome, Firefox, Opera).
@@ -128,6 +130,7 @@ TO UPDATE
         1. Grab and drag the responsive window slowly down to 300px and then back again, checking that everything is displayed correctly in each size / breakpoint.
     * Result:
         * All elements are responsive and display correctly in each of the browsers and in each of the window sizes.
+    * Additionally, I also had a chance to check the responsiveness on a number of 'real' devices, such as: Samsung Galaxy S8, Samsung Galaxy A42, Xiaomi POCO X Pro, iPhone X, Samsung Galaxy Tab A. All elements are responsive and display correctly on each of these devices.
 
 * Check that the links in the navigation bar navigate to correct pages. 
     * Test:
@@ -152,7 +155,14 @@ TO UPDATE
 
 ### Validator testing
 
-* HTML - when the code was passed through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcode-institute-org.github.io%2Flove-running-2.0%2Findex.html) I have received the following error notification: "Element h3 not allowed as child of element label in this context." referring to all input labels in the Contact Us form. To fix this, I have changed all h3 elements to span elements as per the advice found in [this Stackoverflow post](https://stackoverflow.com/questions/50068995/element-h3-not-allowed-as-child-of-element-label-in-this-context-html). No further errors have been found after I applied this fix and passed the code through the validator again.
+* HTML - when the code was passed through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcode-institute-org.github.io%2Flove-running-2.0%2Findex.html) 
+    * I have received a few errors referring to the validator not recognising jinja. To avoid this, I have taken the HTML code straight from each page by clicking on each navbar element in turn, right-clicking and choosing 'View page source' to get clean HTML. After that, the only error I received was: 'Error: Stray end tag div. From line 86, column 5; to line 86, column 10'. However, after checking the code in my repository I did not find this to be true as all the tags were present. I believe there was a glitch in the code taken from 'View page source' (possibly due to jinja not displaying there). There is actually no problem with the code.
+
+    ![Error](https://github.com/OlgaJ1989/taste-of-poland/blob/main/static/images/readme/html-error.PNG) ![No-Error](https://github.com/OlgaJ1989/taste-of-poland/blob/main/static/images/readme/html-error-none.PNG)
+
+
+
+the following error notification: "Element h3 not allowed as child of element label in this context." referring to all input labels in the Contact Us form. To fix this, I have changed all h3 elements to span elements as per the advice found in [this Stackoverflow post](https://stackoverflow.com/questions/50068995/element-h3-not-allowed-as-child-of-element-label-in-this-context-html). No further errors have been found after I applied this fix and passed the code through the validator again.
 * CSS - no errors were found when code was passed through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%3Fdoc%3Dhttps%253A%252F%252Fcode-institute-org.github.io%252Flove-running-2.0%252Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#css)
 * Accessibility - when using the [Wave Web Accessibility Evaluation Tool](https://wave.webaim.org) to test the site's accessibility, I have encountered 2 errors:
     * I skipped a heading level on the menu.html page (I used h1 and h3, leaving out h2). I fixed this by changing the h3 elements to h2. No further errors have been found after I applied this fix and passed the site through the validator again. 
