@@ -4,7 +4,7 @@ Taste of Poland is a restaurant website designed to allow customers to book, edi
 
 TO UPDATE: The website can be accessed [here](https://olgaj1989.github.io/sussex-walks/).
 
-![Mockup](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/mockup.jpg)
+![Mockup](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/mockup.PNG)
 
 ## Features
 
@@ -112,7 +112,7 @@ TO UPDATE
 * [Font Awesome](https://fontawesome.com/) icons have been used for the social media links in the Footer and on the Contact page.    
 * [Google Fonts](https://fonts.google.com/) have been used to import Tangerine and Roboto Slab fonts. 
 * [Favicon](https://favicon.io/) was used to create the favicon for the website.
-* [Am I Responsive](http://ami.responsivedesign.is/#) mockup generator was used to create the mockup image for the readme.md file. 
+* [Techsini](http://techsini.com/multi-mockup/index.php) mockup generator was used to create the mockup image for the README.md file. 
 * [Google Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools) were used to inspect elements of the website and test different styles. 
 * [GitHub](https://github.com/) has been used to store the code, images, and other contents of the website. 
 * [Heroku](https://dashboard.heroku.com/apps) was used to deploy the game to the web.
@@ -165,7 +165,13 @@ TO UPDATE
     
 * CSS - no errors were found when code was passed through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator)
 
-![CSS](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/css-validator.PNG)
+    ![CSS](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/css-validator.PNG)
+    
+
+* JavaScript - when running the code through JShint linter I received the following error message referring to the two 'let' variables: "'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).". I copied /*jshint esversion: 6 */ into the linter window to override this. I have also used /*globals bootstrap */ to stop JSHint from treating 'bootstrap' in let alert = new bootstrap.Alert(messages) as an undefined variable. After I did this, no more errors appeared.
+
+    ![jShint](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/jshint.PNG)
+
 
 * Accessibility - when using the [Wave Web Accessibility Evaluation Tool](https://wave.webaim.org) to test the site's accessibility, I have encountered the following errors and/or warnings:
     * I skipped a heading level on the menu.html page (I used h1 and h3, leaving out h2). I fixed this by changing the h3 elements to h2. No further errors have been found after I applied this fix and passed the site through the validator again. 
@@ -173,7 +179,7 @@ TO UPDATE
     * Aria-labels in the Gallery page were missing. I have added them to all images. 
     * No further errors have been found after I applied the above fixes and passed the site through the validator again.
     
-     ![Wave](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/wave.PNG)
+    ![Wave](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/wave.PNG)
 
 ### Unfixed bugs
 
