@@ -1,7 +1,9 @@
 """ Automated testing """
 from django.test import TestCase
 from django.urls import resolve, reverse
-from .views import home, menu, gallery, contact, page_404, profile, create_booking, update_booking, delete_booking
+from .views import (
+    home, menu, gallery, contact, page_404, profile, create_booking,
+    update_booking, delete_booking)
 
 
 class TestUrls(TestCase):
@@ -50,7 +52,7 @@ class TestUrls(TestCase):
         self.assertEqual(resolve(url).func, create_booking)
 
     def test_update_booking_url_renders_update_booking_view(self):
-        """ Test 'update-booking' url renderings 'update_booking' view. """
+        """ Test 'update-booking' url renders 'update_booking' view. """
         url = reverse('update-booking', args=[20])
         print(resolve(url))
         self.assertEqual(resolve(url).func, update_booking)
@@ -60,3 +62,19 @@ class TestUrls(TestCase):
         url = reverse('delete-booking', args=[20])
         print(resolve(url))
         self.assertEqual(resolve(url).func, delete_booking)
+
+
+class TestViews(TestCase):
+    """ Test views.py """
+
+    def test_booking_form_redirects_when_not_logged_in(self):
+        """ Test 'Reserve a room' redirects when not logged in. """
+        response = self.client.get('/create-booking')
+        self.assertEqual(response.status_code, 302)
+
+    def test_login_redirects_to_home_page(self):
+        """ Test when login successful redirected to home page' """
+        self.client.login(username='Test', password='Test12345')  
+        response = self.client.get('/')
+        self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(response, 'index.html')
