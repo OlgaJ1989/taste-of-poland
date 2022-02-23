@@ -181,15 +181,18 @@ No other bugs found.
 
 ## Deployment
 
+TO UPDATE BEFORE FINAL DEPLOYMENT!
+
 The below steps were followed to deploy this project to Heroku:
-1. Go to [Heroku](https://dashboard.heroku.com/apps) and click "New" to create a new app.
-2. After choosing the app name and setting the region, press "Create app".
-3. Go to "Settings" and navigate to Config Vars. Add a Config Var with a key word of called PORT and a value of 8000.
-4. Still in the "Settings", navigate to Buildpacks and add buildpacks for Python and NodeJS (in order).
-5. Leave "Settings" and go to "Deploy". Scroll down and set Deployment Method to GitHub.
-Once GitHub is chosen, find your repository and connect it to Heroku.
-6. Scroll down to Manual Deploy, make sure the "main" branch is selected and click "Deploy Branch". 
-7. The deployed app can be found [here](https://stranded.herokuapp.com/).
+1. Go to [Heroku](https://dashboard.heroku.com/apps) and click 'New' to create a new app.
+2. After choosing the app name and setting the region, press 'Create app'.
+3. Go to 'Resources' to add a database and scroll down to 'Add-ons'. Search for 'Postgres' and choose 'Heroku Postgres' from available options.
+4. Go to 'Settings' and navigate to 'Config Vars'. As the Postgres database has been connected, the DATABASE_URL is already there. Add the remaining config vars: CLOUDINARY_URL, SECRET_KEY, DISABLE_COLLECTSTATIC (the values for these variables depend on your own personal set up and will not be added here for security reasons). 
+5. Leave 'Settings' and go to 'Deploy'. Scroll down and set 'Deployment Method' to GitHub. Once GitHub is chosen, find your repository and connect it to Heroku.
+6. Scroll down to Manual Deploy, make sure the 'main' branch is selected and click 'Deploy Branch'.
+
+TO UPDATE 
+7. The deployed app can be found TO UPDATE [here](https://stranded.herokuapp.com/).
 
 ## Credits
 
