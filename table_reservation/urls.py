@@ -1,3 +1,4 @@
+""" Url patterns for the table_reservation app. """
 from django.urls import path
 from . import views
 
@@ -10,6 +11,8 @@ urlpatterns = [
     path('profile/', views.profile, name="profile"),
     path('404/', views.page_404, name="404"),
     path('create-booking', views.create_booking, name="create-booking"),
-    path('update-booking/<str:pk>/', views.update_booking, name="update-booking"),
-    path('delete-booking/<str:pk>/', views.delete_booking, name="delete-booking"),
+    path('update-booking/<str:pk>/',
+         views.update_booking, name="update-booking"),
+    path('delete-booking/<str:pk>/',
+         views.delete_booking, name="delete-booking"),
 ]
