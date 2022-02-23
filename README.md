@@ -4,7 +4,7 @@ Taste of Poland is a restaurant website designed to allow customers to book, edi
 
 TO UPDATE: The website can be accessed [here](https://olgaj1989.github.io/sussex-walks/).
 
-![Mockup](https://github.com/OlgaJ1989/taste-of-poland/blob/main/static/images/readme/mockup.jpg)
+![Mockup](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/mockup.jpg)
 
 ## Features
 
@@ -16,86 +16,86 @@ TO UPDATE: The website can be accessed [here](https://olgaj1989.github.io/sussex
         
         2. When logged OUT, the user can see the following links in the navbar: Home, Menu, Reservations (with a Reserve A Table dropdown), Gallery, Contact, Register, Login.
 
-        ![Navigation1](https://github.com/OlgaJ1989/taste-of-poland/blob/main/static/images/readme/logged-out-new.PNG)
+        ![Navigation1](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/logged-out-new.PNG)
 
         3. When logged IN, the user can see the following links in the navbar: Home, Menu, Reservations (with Reserve A Table and My Reservations dropdowns), Gallery, Contact, Logout.  
 
-        ![Navigation2](https://github.com/OlgaJ1989/taste-of-poland/blob/main/static/images/readme/logged-in-new.PNG)
+        ![Navigation2](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/logged-in-new.PNG)
 
         4. On smaller devices the menu links scale down to a toggler, allowing for a cleaner design.
 
-        ![Navigation3](https://github.com/OlgaJ1989/taste-of-poland/blob/main/static/images/readme/responsive-menu.PNG)
+        ![Navigation3](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/responsive-menu.PNG)
        
 
 * Landing page image with overlaying jumbotron
     * The index.html page (Home) includes a background picture inspired by Polish folk art, with a one-sentence description of the website and a button leading directly to a booking page (if logged in) or to the login page (if logged out).
     
-    ![Jumbotron](https://github.com/OlgaJ1989/taste-of-poland/blob/main/static/images/readme/jumbotron.PNG)
+    ![Jumbotron](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/jumbotron.PNG)
 
 * About Us section
     * A small section containing a short description of the restaurant. 
 
-    ![About](https://github.com/OlgaJ1989/taste-of-poland/blob/main/static/images/readme/about-us.PNG)
+    ![About](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/about-us.PNG)
 
 * Cards section with links to Gallery and Menu pages
     * A section containing of two cards with links to the two pages, catching the eye and allowing quick navigation. The design is responsive - users will see 2 cards next to each other on bigger screens and 1 card on top of the other on smaller devices. 
 
-    ![Cards](https://github.com/OlgaJ1989/taste-of-poland/blob/main/static/images/readme/cards.PNG)
+    ![Cards](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/cards.PNG)
 
 * Interactive footer across all pages
     * It consists of clickable icons linking the user to a choice of social media platforms (Facebook, Twitter, Instagram). All links open in new tabs so the user does not have to leave the Sussex Walks page.
 
-    ![Footer](https://github.com/OlgaJ1989/taste-of-poland/blob/main/static/images/readme/footer.PNG)
+    ![Footer](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/footer.PNG)
 
 * Menu page
     * The Menu located in menu.html will provide the user with a list of dishes that can be ordered at the restaurant along with their prices. It consists of 3 tabs (Soups, Mains, Desserts) that can be easily switched between. 
 
-    ![Menu](https://github.com/OlgaJ1989/taste-of-poland/blob/main/static/images/readme/menu.PNG) 
+    ![Menu](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/menu.PNG) 
 
 * Gallery page
     * The Gallery located in gallery.html will provide the user with a collection of photographs showcasing some of the dishes served in the restaurant. Responsive design of the gallery means the images will still be viewed in a good resolution on a smaller screen.
 
-    ![Gallery](https://github.com/OlgaJ1989/taste-of-poland/blob/main/static/images/readme/gallery.PNG)  
+    ![Gallery](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/gallery.PNG)  
 
 * Contact page
     * The contact.html page consists of restaurant contact info (phone, address, email) and an embedded Google map with the location. 
     
-    ![Contact](https://github.com/OlgaJ1989/taste-of-poland/blob/main/static/images/readme/contact.PNG)
+    ![Contact](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/contact.PNG)
 
 * Reservation / booking page
     * The 'Book' tab links with a page that consists of a reservation / booking form which allows the user to book a table for a chosen date and time up to a day before and for up to 6 guests.  
     
-    ![Reservation](https://github.com/OlgaJ1989/taste-of-poland/blob/main/static/images/readme/booking-form.PNG)
+    ![Reservation](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/booking-form.PNG)
 
 * My Bookings page
     * The 'My Bookings' tab display all the bookings that the user has made. It only shows bookings made by the person who is currently logged in. From here the user can edit and delete existing bookings.      
     
-    ![Bookings](https://github.com/OlgaJ1989/taste-of-poland/blob/main/static/images/readme/bookings.PNG)
+    ![Bookings](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/bookings.PNG)
 
 * Deletion confirmation page
     * A template that renders after the user chooses to delete a booking, giving them a chance to confirm their choice or go back to safety.      
     
-    ![Delete](https://github.com/OlgaJ1989/taste-of-poland/blob/main/static/images/readme/delete.PNG)
+    ![Delete](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/delete.PNG)
 
 * Sign In / Login page
     * Allows the user to log in to an existing account in order to book a table and view existing bookings. It also provides the user with the link to register.      
     
-    ![Bookings](https://github.com/OlgaJ1989/taste-of-poland/blob/main/static/images/readme/sign-in.PNG)
+    ![Bookings](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/sign-in.PNG)
 
 * Sign out / Logout confirmation page
     * A template that renders after the user chooses to log out, giving them a chance to confirm in case they clicked the link by mistake.       
     
-    ![SignOut](https://github.com/OlgaJ1989/taste-of-poland/blob/main/static/images/readme/sign-out-confirm.PNG)
+    ![SignOut](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/sign-out-confirm.PNG)
 
 *  404 page
     * A custom 404 page has been made to make it easy for the user to come back to the game page after they tried to move to a non-existent page.
 
-    ![404](https://github.com/OlgaJ1989/taste-of-poland/blob/main/static/images/readme/404.PNG)
+    ![404](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/404.PNG)
 
 * A favicon
     * A favicon has been added to make it easier for users to find the Taste of Poland page if multiple tabs are open. 
     
-    ![Favicon](https://github.com/OlgaJ1989/taste-of-poland/blob/main/static/images/readme/favicon.PNG)
+    ![Favicon](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/favicon.PNG)
 
 ### Features left to implement
 
@@ -159,13 +159,13 @@ TO UPDATE
     * I have received a few errors referring to the validator not recognising jinja. To avoid this, I have taken the HTML code straight from each page by clicking on each navbar element in turn, right-clicking and choosing 'View page source' to get clean HTML. 
     * Across all pages (inheriting from base.html): 'Error: Stray end tag div. From line 86, column 5; to line 86, column 10'. After checking the code in my repository I did not find this to be true as all the tags were present. I believe there was a glitch in the code taken from 'View page source' (possibly due to jinja not displaying there). There is actually no problem with the code.
 
-    ![Error](https://github.com/OlgaJ1989/taste-of-poland/blob/main/static/images/readme/html-error.PNG) 
+    ![Error](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/html-error.PNG) 
 
     * In contact.html: 'Bad value 100% for attribute width on element iframe: Expected a digit but saw % instead.' I have fixed this by moving the 'width' attribute from the 'iframe' tag in the template to style.css.    
     
 * CSS - no errors were found when code was passed through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator)
 
-![CSS](https://github.com/OlgaJ1989/taste-of-poland/blob/main/static/images/readme/css-validator.PNG)
+![CSS](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/css-validator.PNG)
 
 * Accessibility - when using the [Wave Web Accessibility Evaluation Tool](https://wave.webaim.org) to test the site's accessibility, I have encountered the following errors and/or warnings:
     * I skipped a heading level on the menu.html page (I used h1 and h3, leaving out h2). I fixed this by changing the h3 elements to h2. No further errors have been found after I applied this fix and passed the site through the validator again. 
@@ -173,7 +173,7 @@ TO UPDATE
     * Aria-labels in the Gallery page were missing. I have added them to all images. 
     * No further errors have been found after I applied the above fixes and passed the site through the validator again.
     
-     ![Wave](https://github.com/OlgaJ1989/taste-of-poland/blob/main/static/images/readme/wave.PNG)
+     ![Wave](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/wave.PNG)
 
 ### Unfixed bugs
 
@@ -187,7 +187,7 @@ The below steps were followed to deploy this project to Heroku:
 1. Go to [Heroku](https://dashboard.heroku.com/apps) and click 'New' to create a new app.
 2. After choosing the app name and setting the region, press 'Create app'.
 3. Go to 'Resources' to add a database and scroll down to 'Add-ons'. Search for 'Postgres' and choose 'Heroku Postgres' from available options.
-4. Go to 'Settings' and navigate to 'Config Vars'. As the Postgres database has been connected, the DATABASE_URL is already there. Add the remaining config vars: CLOUDINARY_URL, SECRET_KEY, DISABLE_COLLECTSTATIC (the values for these variables depend on your own personal set up and will not be added here for security reasons). 
+4. Go to 'Settings' and navigate to 'Config Vars'. As the Postgres database has been connected, the DATABASE_URL is already there. Add the remaining config vars: CLOUDINARY_URL, SECRET_KEY, (the values for these variables depend on your own personal set up and will not be added here for security reasons). 
 5. Leave 'Settings' and go to 'Deploy'. Scroll down and set 'Deployment Method' to GitHub. Once GitHub is chosen, find your repository and connect it to Heroku.
 6. Scroll down to Manual Deploy, make sure the 'main' branch is selected and click 'Deploy Branch'.
 
