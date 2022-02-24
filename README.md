@@ -1,6 +1,6 @@
 # Taste of Poland
 
-Taste of Poland is a restaurant website designed to allow customers to book, edit and delete tables through a custom booking form. Users can also view the menu, gallery and the venue's contact details.
+Taste of Poland is a restaurant website designed to allow customers to make, edit and delete reservations. Users can also view the menu, gallery and the venue's contact details.
 
 TO UPDATE: The website can be accessed [here](https://olgaj1989.github.io/sussex-walks/).
 
@@ -12,96 +12,191 @@ TO UPDATE: The website can be accessed [here](https://olgaj1989.github.io/sussex
 
 * Navigation Bar 
     * Includes direct links to all parts of the website, allowing the user to easily navigate between them. 
-        1. When clicked, the logo leads to the home page.
-        
-        2. When logged OUT, the user can see the following links in the navbar: Home, Menu, Reservations (with a Reserve A Table dropdown), Gallery, Contact, Register, Login.
+        1. When logged OUT, the user can see the following links in the navbar: Home, Menu, Reservations (with a Reserve A Table dropdown), Gallery, Contact, Register, Login.
 
-        ![Navigation1](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/logged-out-new.PNG)
+           ![Navigation1](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/logged-out-new.PNG)
 
-        3. When logged IN, the user can see the following links in the navbar: Home, Menu, Reservations (with Reserve A Table and My Reservations dropdowns), Gallery, Contact, Logout.  
+        2. When logged IN, the user can see the following links in the navbar: Home, Menu, Reservations (with Reserve A Table and My Reservations dropdowns), Gallery, Contact, Logout.  
 
-        ![Navigation2](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/logged-in-new.PNG)
+           ![Navigation2](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/logged-in-new.PNG)
 
-        4. On smaller devices the menu links scale down to a toggler, allowing for a cleaner design.
+        3. On smaller devices the menu links scale down to a toggler, allowing for a cleaner design.
 
-        ![Navigation3](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/responsive-menu.PNG)
-       
-
+           ![Navigation3](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/responsive-menu.PNG)
+      
 * Landing page image with overlaying jumbotron
     * The index.html page (Home) includes a background picture inspired by Polish folk art, with a one-sentence description of the website and a button leading directly to a booking page (if logged in) or to the login page (if logged out).
     
-    ![Jumbotron](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/jumbotron.PNG)
+      ![Jumbotron](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/jumbotron.PNG)
 
 * About Us section
     * A small section containing a short description of the restaurant. 
 
-    ![About](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/about-us.PNG)
+      ![About](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/about-us.PNG)
 
 * Cards section with links to Gallery and Menu pages
     * A section containing of two cards with links to the two pages, catching the eye and allowing quick navigation. The design is responsive - users will see 2 cards next to each other on bigger screens and 1 card on top of the other on smaller devices. 
 
-    ![Cards](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/cards.PNG)
+      ![Cards](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/cards.PNG)
 
 * Interactive footer across all pages
     * It consists of clickable icons linking the user to a choice of social media platforms (Facebook, Twitter, Instagram). All links open in new tabs so the user does not have to leave the Sussex Walks page.
 
-    ![Footer](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/footer.PNG)
+      ![Footer](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/footer.PNG)
 
 * Menu page
     * The Menu located in menu.html will provide the user with a list of dishes that can be ordered at the restaurant along with their prices. It consists of 3 tabs (Soups, Mains, Desserts) that can be easily switched between. 
 
-    ![Menu](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/menu.PNG) 
+      ![Menu](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/menu.PNG) 
 
 * Gallery page
     * The Gallery located in gallery.html will provide the user with a collection of photographs showcasing some of the dishes served in the restaurant. Responsive design of the gallery means the images will still be viewed in a good resolution on a smaller screen.
 
-    ![Gallery](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/gallery.PNG)  
+      ![Gallery](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/gallery.PNG)  
 
 * Contact page
     * The contact.html page consists of restaurant contact info (phone, address, email) and an embedded Google map with the location. 
     
-    ![Contact](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/contact.PNG)
+      ![Contact](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/contact.PNG)
 
 * Reservation / booking page
     * The 'Book' tab links with a page that consists of a reservation / booking form which allows the user to book a table for a chosen date and time up to a day before and for up to 6 guests.  
     
-    ![Reservation](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/booking-form.PNG)
+      ![Reservation](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/booking-form.PNG)
 
 * My Bookings page
     * The 'My Bookings' tab display all the bookings that the user has made. It only shows bookings made by the person who is currently logged in. From here the user can edit and delete existing bookings.      
     
-    ![Bookings](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/bookings.PNG)
+      ![Bookings](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/bookings.PNG)
 
 * Deletion confirmation page
     * A template that renders after the user chooses to delete a booking, giving them a chance to confirm their choice or go back to safety.      
     
-    ![Delete](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/delete.PNG)
+      ![Delete](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/delete.PNG)
 
 * Sign In / Login page
     * Allows the user to log in to an existing account in order to book a table and view existing bookings. It also provides the user with the link to register.      
     
-    ![Bookings](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/sign-in.PNG)
+      ![Bookings](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/sign-in.PNG)
 
 * Sign out / Logout confirmation page
     * A template that renders after the user chooses to log out, giving them a chance to confirm in case they clicked the link by mistake.       
     
-    ![SignOut](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/sign-out-confirm.PNG)
+      ![SignOut](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/sign-out-confirm.PNG)
 
 *  404 page
     * A custom 404 page has been made to make it easy for the user to come back to the game page after they tried to move to a non-existent page.
 
-    ![404](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/404.PNG)
+      ![404](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/404.PNG)
 
 * A favicon
     * A favicon has been added to make it easier for users to find the Taste of Poland page if multiple tabs are open. 
     
-    ![Favicon](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/favicon.PNG)
+      ![Favicon](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/favicon.PNG)
 
 ### Features left to implement
 
 TO UPDATE 
 
-## Wireframes
+## User Experience Design
+
+Taste of Poland is a responsive website of a non-existent Polish restaurant in Brighton. 
+
+The aim of the website is: 
+- to give users the possibility of viewing the restaurant's Menu and photo Gallery so that they can decide in advance of their visit whether the restaurant and its offering is something they would like to try out;
+- to give users the possibility of registering for an account in order to be able to book a table so that the bookings are held in a secure environment where no one can access and tamper with them without login details;
+- to give the the site owners / authorised staff the possibility of viewing the bookings users made so they can be modified or deleted if needed;
+- to give users the possibility of accessing the website and booking a table on any device;
+- to give users the details neccessary for them to be able to contact the venue.
+
+### User Stories
+
+User stories for this project can be viewed on [Trello](https://trello.com/b/OdCkLJxF/kanban-template).
+
+#### User Experience Epic
+
+1. As a user, I want the main purpose of the website to be clear so that upon entering I immediately know what it's purpose is.
+    * Acceptance Criteria:
+        - Restaurant logo ad information displayed on the main page with clear information on what the site's purpose is.
+    * Implementation:
+        - The Home page will contain the main website title of "Taste of Poland", situated in the navbar section. 
+        - It will also contain information about the site's general purpose and about the restaurant itself, to make what the site is intended for immediately clear to the user.
+        
+2. As a user, I want to be able to easily navigate between the different parts / pages of the website so that I can find content quickly and easily on any device.
+    * Acceptance Criteria:
+        - Navigation menu to allow users to navigate the site with ease.
+        - Collapsible mobile menu to allow users to navigate the site from a mobile device. 
+        - All navigation links should navigate to the correct pages.
+        - The 'My Reservations' dropdown option should only appear for signed in users.
+    * Implementation:
+        - A navigation menu will be created to allow users to navigate through the site. It will be collapsible on a mobile device, and positioned at the top right of the logo element.
+        - When a user is not logged in, 'Home', 'Menu', 'Reservations' (with a 'Reserve a Table' dropdown), 'Gallery', 'Contact' 'Register' and 'Login' navigation items will be displayed.
+        - When a user is logged in, an extra 'My Reservations' dropdown will appear under the 'Reservations' link, and 'Register' and 'Login' will disappear, with 'Logout' appearing in their place.
+
+3. As a user, I want to be able to easily find links to any social media channels that the restaurant might be running.
+    * Acceptance Criteria:
+        - Social media links included to allow users to navigate to linked accounts with ease.
+        - All links should navigate to the correct pages.
+    * Implementation:
+        - Social media links in the form of FontAwesome icons will be added to the footer and appear on each page.
+
+4. As a user, I want to be able to view the menu so I can choose food items in advance of my visit.
+    * Acceptance Criteria:
+        - A list of dishes that the restaurant serves, along with their descriptions and pricing.
+        - Clear division between types of dishes.
+    * Implementation:
+        - The 'Menu' tab will include an interactive menu consisting of three tabs: 'Soups', 'Mains' and 'Desserts'. Users will be able to easily and quickly switch between these tabs to reveal the list of relevant dishes.
+
+5. As a user, I want to be able to contact the restaurant in case I have any questions regarding the venue or a reservation I made, or if I encounter any issues with the website. 
+    * Acceptance Criteria:
+        - A 'Contact' page which includes the venue's contact information.
+    * Implementation:
+        - A 'Contact' page will be created and it will include the venue's contact information (such as addres, email and phone number) as well as an embedded Google map showing the restaurant's location. This page will also include the Opening Hours.
+
+6. As a user, I want to be able to view a photo gallery of dishes, so I can decide whether they look appealing enough for me to visit and try them out.
+    * Acceptance Criteria:
+        - A 'Gallery' page displaying photos of the dishes present on the retaurant's menu.
+    * Implementation:
+        - A 'Gallery' page will be created, using high quality photos of the food the restaurant serves. It will be made responsible so that users can enjoy good resolution also on smaller devices. 
+ 
+#### Profile Epic
+
+7. As a site admin, I want to be able to view, modify or delete existing bookings.
+    * Acceptance Criteria:
+        - An 'Admin' page displaying all existing bookings for every user, where the restaurant's owners / authorised staff are able to view, modify and delete them.
+    * Implementation:
+        - A Django built in admin panel will be utilised to create a page where staff authorised as Django 'superusers' can view the users that registered for an account, as well as view, modify, and delete their reservations if necessary.
+
+8. As a site admin, I want to make the option of reserving a table available only to registered users.
+    * Acceptance Criteria:
+        - Booking / reservation form not available for unregistered users.
+    * Implementation:
+        - If a user that is not logged in clicks on the 'Reserve a table' link in the 'Reservations' dropdown, they will be redirected straight to the 'Login' page. If they do not have login details, the information on the 'Login' page will direct them to the 'Register' page. The 'Reserve a table' link will display the booking form only if they are logged in.    
+
+9. As a user, I want to be able to create, view, edit and delete a table reservation.
+    * Acceptance Criteria:
+        - A custom booking form allowing the users to book a table for a chosen date and time.
+        - A 'My reservations' page displaying all the reservations that they have so far created.
+        - Functionality allowing the users to edit and delete the existing reservations.
+    * Implementation:
+        - A custom reservation form will be created (under 'Reserve a table' in 'Reservations' dropdown), allowing registered users to book a table for a chosen date and time.
+        - When booking is submitted, user will be redirected to 'My reservations' page that will display the reservation details, such as first and last name of the main guest, date, time, table and number of guests.
+        - 'Edit' and 'Delete' buttons will appear next to each created booking, allowing users to modify or cancel bookings easily.
+
+10. As a user, I want to be able to register for an account to be able to make reservations and store them in a secure environment.
+    * Acceptance Criteria:
+        - A custom registration form / page allowing the users to register for an account.
+    * Implementation:
+        - A reservation form / page will be created using the allauth library, allowing users to register for an account. 
+        
+
+11. As a user, I want to be able to log into my account to make a reservation and view my bookings.
+    * Acceptance Criteria:
+        - A custom login form allowing the users to login to the website.
+    * Implementation:
+        - A login form will be created using the allauth library, allowing users to login to an existing account.
+
+### Wireframes
 
 * Home
 
@@ -143,6 +238,7 @@ TO UPDATE
 * [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) was used to tweak the settings of login / logout notifications / messages.
 * [Python](https://www.python.org/) was used as the main language in which this project was coded.
 * [Django](https://www.djangoproject.com/) was the framework used to build this website.
+* [Bootstrap](https://getbootstrap.com/docs/4.0/getting-started/introduction/) was used to create and style the front end of the website.
 * [Font Awesome](https://fontawesome.com/) icons have been used for the social media links in the Footer and on the Contact page.    
 * [Google Fonts](https://fonts.google.com/) have been used to import Tangerine and Roboto Slab fonts. 
 * [Favicon](https://favicon.io/) was used to create the favicon for the website.
