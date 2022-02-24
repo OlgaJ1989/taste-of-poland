@@ -113,7 +113,6 @@ The aim of the website is:
 
 User stories for this project can be viewed on [Trello](https://trello.com/b/OdCkLJxF/kanban-template).
 
-#### User Experience Epic
 ![UX Epic](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/ux_epic.PNG)
 
 1. As a user, I want the main purpose of the website to be clear so that upon entering I immediately know what it's purpose is.
@@ -160,7 +159,6 @@ User stories for this project can be viewed on [Trello](https://trello.com/b/OdC
     * Implementation:
         - A 'Gallery' page will be created, using high quality photos of the food the restaurant serves. It will be made responsible so that users can enjoy good resolution also on smaller devices. 
  
-#### Admin Profile Epic
 ![Admin Profile Epic](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/ap_epic.PNG)
 
 7. As a site admin, I want to be able to view, modify or delete existing bookings.
@@ -175,7 +173,6 @@ User stories for this project can be viewed on [Trello](https://trello.com/b/OdC
     * Implementation:
         - If a user that is not logged in clicks on the 'Reserve a table' link in the 'Reservations' dropdown, they will be redirected straight to the 'Login' page. If they do not have login details, the information on the 'Login' page will direct them to the 'Register' page. The 'Reserve a table' link will display the booking form only if they are logged in.   
 
-#### User Profile Epic 
 ![User Profile Epic](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/up_epic.PNG)
 
 9. As a user, I want to be able to create, view, edit and delete a table reservation.
