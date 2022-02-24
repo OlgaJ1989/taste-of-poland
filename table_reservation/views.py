@@ -31,6 +31,7 @@ def page_404(request):
     return render(request, '404.html')
 
 
+@login_required(login_url='account_login')
 def profile(request):
     """ View generating the Profile (Current Bookings) page. """
     reservations = Reservation.objects.all()

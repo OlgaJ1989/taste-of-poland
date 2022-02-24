@@ -273,18 +273,171 @@ User stories for this project can be viewed on [Trello](https://trello.com/b/OdC
         * All links working and directing users to the correct pages.
 
 * Check that the 'My reservations' tab in the 'Reservations' dropdown appears only if a user is signed in.
+    * Test:
+        1. Open the website in a browser.
+        1. Make sure you are logged out.
+        1. Click on the 'Reservations' dropdown in the navbar.
+        1. You should only see the 'Reserve my table' link / tab.
+    * Result:
+        1. When clicked, the 'Reservations' dropdown display only the 'Reserve my table' link / tab as expected. 
 
 * Check that the 'Reserve a table' tab in the 'Reservations' dropdown redirects to the 'Login' page if a user is signed out.
+    * Test:
+        1. Open the website in a browser.
+        1. Make sure you are logged out.
+        1. Click on the 'Reservations' dropdown in the navbar.
+        1. Click on 'Reserve a table'. 
+        1. You should be redirected to the 'Sign In' page.
+    * Result:
+        1. When clicked, the 'Reserve a table' button redirects to the 'Sign In' page as expected.  
 
 * Check that the 'Reserve a table' tab in the 'Reservations' dropdown displays a table reservation form if a user is signed in.
+    * Test:
+        1. Open the website in a browser.
+        1. Make sure you are logged in.
+        1. Click on the 'Reservations' dropdown in the navbar.
+        1. Click on 'Reserve a table'. 
+        1. You should be redirected to the table reservation form ('Book a Table' page).
+    * Result:
+        1. When clicked, 'Reserve a table' redirects to the table reservation form page as expected.
 
 * Check that when user clicks 'Logout' they are redirected to a confirmation page ('Are you sure you want to sign out?')
+    * Test:
+        1. Open the website in a browser.
+        1. Make sure you are logged in.
+        1. Click on 'Logout'.
+        1. You should be redirected to the logout confirmation page. 
+    * Result:
+        1. When clicked, 'Logout' redirects to the logout confirmation page as expected.
 
-* Check that user is correctly notified when they have logged in. 
+* Check that user is notified when they log in (with a Bootstrap alert). 
+    * Test:
+        1. Open the website in a browser.
+        1. If you are logged in, log out.
+        1. Click on 'Login'.
+        1. Enter your login details and click 'Sign In'.
+        1. You should see a 'Successfuly signed in as XXX.' message flash under the navbar for a few seconds. 
+    * Result:
+        1. Alert appears as expected.
 
-* Check that user is correctly notified when they have logged out.
+* Check that user is notified when they log out (with a Bootstrap alert).
+    * Test:
+        1. Open the website in a browser.
+        1. If you are logged out, log in.
+        1. Click on 'Logout'.
+        1. When asked 'Are you sure you want to sign out?', confirm your choice.
+        1. You should see a 'You have signed out.' message flash under the navbar for a few seconds. 
+    * Result:
+        1. Alert appears as expected.
 
-* Make sure that unauthorised users cannot view, edit or delete someone else's reservations.
+* Check that the 'Book a table' button in the Home page jumbotron redirects to a 'Sign in' page if user not logged in.
+    * Test:
+        1. Open the website in a browser.
+        1. Make sure you are logged out.
+        1. Click on the 'Book a table' button in the hero / jumbotron section of the 'Home' page. 
+        1. You should be redirected to the 'Sign In' page.
+    * Result:
+        1. When clicked, the 'Book a table' button redirects to the 'Sign In' page as expected.
+
+* Check that the 'Book a table' button in the Home page jumbotron redirects to a 'Book a table' page if user logged in.
+    * Test:
+        1. Open the website in a browser.
+        1. Make sure you are logged in.
+        1. Click on the 'Book a table' button in the hero / jumbotron section of the 'Home' page. 
+        1. You should be redirected to the table reservation form.
+    * Result:
+        1. When clicked, the 'Book a table' button redirects to the table reservation form as expected.
+
+* Check that unauthorised users cannot view 'My reservations'.
+    * Test:
+        1. Open the website in a browser.
+        1. Make sure you are logged out.
+        1. Try to access the 'My reservations' link directly, by typing it into the browser's address bar.
+        1. You should be redirected to the 'Sign In' page.
+    * Result:
+        1. As expected, 'My reservations' link fails to open and redirects to 'Sign In' page. 
+
+* Check that users cannot edit other users' reservations.
+    * Test:
+        1. Open the website in a browser.
+        1. Log in.
+        1. Try to access an 'Edit' link of a reservation created by a different user.
+        1. You should be redirected back to the page you came from and a 'You are not aurhorised to edit this reservation.' alert should appear under the navbar for a few seconds.
+    * Result:
+        1. As expected, user gets redirected to their previous destination and an alert is displayed. 
+
+* Check that users cannot delete other users' reservations.
+    * Test:
+        1. Open the website in a browser.
+        1. Log in.
+        1. Try to access a 'Delete' link of a reservation created by a different user.
+        1. You should be redirected back to the page you came from and a 'You are not aurhorised to delete this reservation.' alert should appear under the navbar for a few seconds.
+    * Result:
+        1. As expected, user gets redirected to their previous destination and an alert is displayed. 
+
+* Check that when a table reservation form is submitted, user is redirected to 'My reservations' and a 'Booking created successfuly' alert is displayed.
+    * Test:
+        1. Open the website in a browser.
+        1. Log in.
+        1. Go to 'Reserve a table' in the 'Reservations' dropdown. 
+        1. Fill in the form and 'Submit'.
+        1. You should be redirected to 'My reservations' and a 'Booking created successfuly' alert should appear under the navbar for a few seconds.
+    * Result:
+        1. As expected, user gets redirected to 'My reservations' and an alert is displayed.
+
+* Check that when a reservation is deleted, user is redirected to 'My reservations' and a 'Booking deleted.' alert is displayed.
+    * Test:
+        1. Open the website in a browser.
+        1. Log in.
+        1. Go to 'My reservations' in the 'Reservations' dropdown. 
+        1. Click 'Delete' next to a chosen reservation. 
+        1. When asked to confirm, do so.
+        1. You should be redirected to 'My reservations' and a 'Booking deleted.' alert should appear under the navbar for a few seconds.
+    * Result:
+        1. As expected, user gets redirected to 'My reservations' and an alert is displayed.
+
+* Check that when a reservation is edited, user is redirected to 'My reservations' and a 'Your changes have been saved.' alert is displayed.
+    * Test:
+        1. Open the website in a browser.
+        1. Log in.
+        1. Go to 'My reservations' in the 'Reservations' dropdown. 
+        1. Click 'Edit' next to a chosen reservation. 
+        1. Edit some details and save changes.
+        1. You should be redirected to 'My reservations' and a 'Your changes have been saved.' alert should appear under the navbar for a few seconds.
+    * Result:
+        1. As expected, user gets redirected to 'My reservations' and an alert is displayed.
+
+* Check that an 'Are you sure you want to delete your booking?' page is displayed when a 'Delete' button is clicked on a booking.
+    * Test:
+        1. Open the website in a browser.
+        1. Log in.
+        1. Go to 'My reservations' in the 'Reservations' dropdown. 
+        1. Click 'Delete' next to a chosen reservation. 
+        1. You should be redirected to 'Are you sure you want to delete your booking?' page.
+    * Result:
+        1. As expected, user gets redirected to the deletion confirmation page.
+
+* Check that when a 'Confirm' button is clicked on an 'Are you sure you want to delete your booking?' page, user is redirected to 'My Reservations' and the booking thy deleted is gone.
+    * Test:
+        1. Open the website in a browser.
+        1. Log in.
+        1. Go to 'My reservations' in the 'Reservations' dropdown. 
+        1. Click 'Delete' next to a chosen reservation. 
+        1. 'Are you sure you want to delete your booking?' Click 'Confirm'.
+        1. You should be redirected to 'My reservations' and the booking you deleted should be gone.
+    * Result:
+        1. As expected, user gets redirected to 'My reservations' and the deleted booking is gone.
+
+* Check that when a 'No! Go Back' button is clicked on an 'Are you sure you want to delete your booking?' page, user is redirected to 'My Reservations' and all the bookings are still there (none have been deleted).
+    * Test:
+        1. Open the website in a browser.
+        1. Log in.
+        1. Go to 'My reservations' in the 'Reservations' dropdown. 
+        1. Click 'Delete' next to a chosen reservation. 
+        1. 'Are you sure you want to delete your booking?' Click 'No! Go Back'.
+        1. You should be redirected to 'My reservations' and have the same amount of bookings you had previously.
+    * Result:
+        1. As expected, user gets redirected to 'My reservations' and no bookings are deleted.
 
 * Check that the links to social media pages in the Footer work and open in new tabs.
     * Test:
