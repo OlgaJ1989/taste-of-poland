@@ -260,7 +260,7 @@ User stories for this project can be viewed on [Trello](https://trello.com/b/OdC
         1. Grab and drag the responsive window slowly down to 300px and then back again, checking that everything is displayed correctly in each size / breakpoint.
     * Result:
         * All elements are responsive and display correctly in each of the browsers and in each of the window sizes.
-    * Additionally, I also had a chance to check the responsiveness on a number of 'real' devices, such as: Samsung Galaxy S8, Samsung Galaxy A42, Xiaomi POCO X Pro, iPhone X, Samsung Galaxy Tab A. All elements are responsive and display correctly on each of these devices.
+    * Additionally, I also had a chance to check the responsiveness on a number of 'real' devices, such as: Samsung Galaxy S8, Samsung Galaxy A42, Xiaomi POCO X Pro, iPhone X, iPhone 13 Pro, Samsung Galaxy Tab A. All elements are responsive and display correctly on each of these devices.
 
 * Check that the links in the navigation bar navigate to correct pages. 
     * Test:
@@ -269,12 +269,35 @@ User stories for this project can be viewed on [Trello](https://trello.com/b/OdC
     * Result:
         * All links working and directing user to the correct pages.
 
+* Check that the 'My reservations' tab in the 'Reservations' dropdown appears only if a user is signed in.
+
+* Check that the 'Reserve a table' tab in the 'Reservations' dropdown redirects to the 'Login' page if user is signed out.
+
+* Check that the 'Reserve a table' tab in the 'Reservations' dropdown displays a table reservation form if user is signed in.
+
+* Check that when user clicks 'Logout' they are rdirected to a confirmation page ('Are you sure you want to sign out?')
+
+* Check that user is correctly notified when they have logged in. 
+
+* Check that user is correctly notified when they have logged out.
+
+* Make sure that unauthorised users cannot view, edit or delete someone else's reservations.
+
 * Check that the links to social media pages in the Footer work and open in new tabs.
     * Test:
         1. Open the website in a browser.
         1. Click on all social media links (Facebook, Twitter, YouTube, Instagram) one by one to make sure that the links are in working order and that they all open in a separate tab.
     * Result:
         * All links are working and all of them open in separate / new tabs.
+
+* Check that the links included in the 'Gallery' and 'Menu' cards in the Home page work and redirect correctly to the 'Gallery' and 'Menu' pages.
+    * Test:
+        1. Open the website in a browser.
+        1. Scroll down the Home page to the cards section.
+        1. Click on the 'View Menu' button in the 'Menu' card to make sure that the link works and redirects to the 'Menu' page.
+        1. Then click on the 'View Gallery' button in the 'Gallery' card to make sure that the link works and redirects to the 'Gallery' page.        
+    * Result:
+        * All links are working and all of them redirect to correct pages.
 
 * Check validation of the Reservation form.
     * Test:
