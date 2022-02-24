@@ -1,6 +1,6 @@
 # Taste of Poland
 
-Taste of Poland is a restaurant website designed to allow customers to make, edit and delete reservations. Users can also view the menu, gallery and the venue's contact details.
+Taste of Poland is a restaurant website designed to allow customers to make, edit and delete reservations. Users can also view the menu, gallery, and the venue's contact details.
 
 TO UPDATE: The website can be accessed [here](https://olgaj1989.github.io/sussex-walks/).
 
@@ -35,7 +35,7 @@ TO UPDATE: The website can be accessed [here](https://olgaj1989.github.io/sussex
       ![About](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/about-us.PNG)
 
 * Cards section with links to Gallery and Menu pages
-    * A section containing of two cards with links to the two pages, catching the eye and allowing quick navigation. The design is responsive - users will see 2 cards next to each other on bigger screens and 1 card on top of the other on smaller devices. 
+    * A section containing two cards with links to the two pages, catching the eye and allowing quick navigation. The design is responsive - users will see 2 cards next to each other on bigger screens and 1 card on top of the other on smaller devices. 
 
       ![Cards](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/cards.PNG)
 
@@ -50,7 +50,7 @@ TO UPDATE: The website can be accessed [here](https://olgaj1989.github.io/sussex
       ![Menu](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/menu.PNG) 
 
 * Gallery page
-    * The Gallery located in gallery.html will provide the user with a collection of photographs showcasing some of the dishes served in the restaurant. Responsive design of the gallery means the images will still be viewed in a good resolution on a smaller screen.
+    * The Gallery located in gallery.html will provide the user with a collection of photographs showcasing some of the dishes served in the restaurant. The responsive design of the gallery means the images will still be viewed in a good resolution on a smaller screen.
 
       ![Gallery](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/gallery.PNG)  
 
@@ -105,9 +105,9 @@ Taste of Poland is a responsive website of a non-existent Polish restaurant in B
 The aim of the website is: 
 - to give users the possibility of viewing the restaurant's Menu and photo Gallery so that they can decide in advance of their visit whether the restaurant and its offering is something they would like to try out;
 - to give users the possibility of registering for an account in order to be able to book a table so that the bookings are held in a secure environment where no one can access and tamper with them without login details;
-- to give the the site owners / authorised staff the possibility of viewing the bookings users made so they can be modified or deleted if needed;
+- to give the site owners / authorised staff the possibility of viewing the bookings users made so they can be modified or deleted if needed;
 - to give users the possibility of accessing the website and booking a table on any device;
-- to give users the details neccessary for them to be able to contact the venue.
+- to give users the details necessary for them to be able to contact the venue.
 
 ### User Stories
 
@@ -115,9 +115,9 @@ User stories for this project can be viewed on [Trello](https://trello.com/b/OdC
 
 ![UX Epic](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/ux_epic.PNG)
 
-1. As a user, I want the main purpose of the website to be clear so that upon entering I immediately know what it's purpose is.
+1. As a user, I want the main purpose of the website to be clear so that upon entering I immediately know what its purpose is.
     * Acceptance Criteria:
-        - Restaurant logo ad information displayed on the main page with clear information on what the site's purpose is.
+        - Restaurant logo ad information is displayed on the main page with clear information on what the site's purpose is.
     * Implementation:
         - The Home page will contain the main website title of "Taste of Poland", situated in the navbar section. 
         - It will also contain information about the site's general purpose and about the restaurant itself, to make what the site is intended for immediately clear to the user.
@@ -127,7 +127,7 @@ User stories for this project can be viewed on [Trello](https://trello.com/b/OdC
         - Navigation menu to allow users to navigate the site with ease.
         - Collapsible mobile menu to allow users to navigate the site from a mobile device. 
         - All navigation links should navigate to the correct pages.
-        - The 'My Reservations' dropdown option should only appear for signed in users.
+        - The 'My Reservations' dropdown option should only appear for signed-in users.
     * Implementation:
         - A navigation menu will be created to allow users to navigate through the site. It will be collapsible on a mobile device, and positioned at the top right of the logo element.
         - When a user is not logged in, 'Home', 'Menu', 'Reservations' (with a 'Reserve a Table' dropdown), 'Gallery', 'Contact' 'Register' and 'Login' navigation items will be displayed.
@@ -151,21 +151,21 @@ User stories for this project can be viewed on [Trello](https://trello.com/b/OdC
     * Acceptance Criteria:
         - A 'Contact' page which includes the venue's contact information.
     * Implementation:
-        - A 'Contact' page will be created and it will include the venue's contact information (such as address, email and phone number) as well as an embedded Google map showing the restaurant's location. This page will also include the Opening Hours.
+        - A 'Contact' page will be created and it will include the venue's contact information (such as an address, email and phone number) as well as an embedded Google map showing the restaurant's location. This page will also include the Opening Hours.
 
 6. As a user, I want to be able to view a photo gallery of dishes, so I can decide whether they look appealing enough for me to visit and try them out.
     * Acceptance Criteria:
         - A 'Gallery' page displaying photos of the dishes present on the restaurant's menu.
     * Implementation:
-        - A 'Gallery' page will be created, using high quality photos of the food the restaurant serves. It will be made responsible so that users can enjoy good resolution also on smaller devices. 
+        - A 'Gallery' page will be created, using high-quality photos of the food the restaurant serves. It will be made responsive so that users can enjoy good resolution also on smaller devices. 
  
 ![Admin Profile Epic](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/ap_epic.PNG)
 
 7. As a site admin, I want to be able to view, modify or delete existing bookings.
     * Acceptance Criteria:
-        - An 'Admin' page displaying all existing bookings for every user, where the restaurant's owners / authorised staff are able to view, modify and delete them.
+        - An 'Admin' page displaying all existing bookings for every user, where the restaurant's owners / authorised staff can view, modify and delete them.
     * Implementation:
-        - A Django built in admin panel will be utilised to create a page where staff authorised as Django 'superusers' can view the users that registered for an account, as well as view, modify, and delete their reservations if necessary.
+        - A Django built-in admin panel will be utilised to create a page where staff authorised as Django 'superusers' can view the users that registered for an account, as well as view, modify, and delete their reservations if necessary.
 
 8. As a site admin, I want to make the option of reserving a table available only to registered users.
     * Acceptance Criteria:
@@ -181,8 +181,8 @@ User stories for this project can be viewed on [Trello](https://trello.com/b/OdC
         - A 'My reservations' page displaying all the reservations that they have so far created.
         - Functionality allowing the users to edit and delete the existing reservations.
     * Implementation:
-        - A custom reservation form will be created (under 'Reserve a table' in 'Reservations' dropdown), allowing registered users to book a table for a chosen date and time.
-        - When booking is submitted, user will be redirected to 'My reservations' page that will display the reservation details, such as first and last name of the main guest, date, time, table and number of guests.
+        - A custom reservation form will be created (under 'Reserve a table' in the 'Reservations' dropdown), allowing registered users to book a table for a chosen date and time.
+        - When the booking is submitted, the user will be redirected to 'My reservations' page that will display the reservation details, such as the first and last name of the main guest, date, time, table and number of guests.
         - 'Edit' and 'Delete' buttons will appear next to each created booking, allowing users to modify or cancel bookings easily.
 
 10. As a user, I want to be able to register for an account to be able to make reservations and store them in a secure environment.
@@ -194,9 +194,9 @@ User stories for this project can be viewed on [Trello](https://trello.com/b/OdC
 
 11. As a user, I want to be able to log into my account to make a reservation and view my bookings.
     * Acceptance Criteria:
-        - A custom login form allowing the users to login to the website.
+        - A custom login form allowing the users to log in to the website.
     * Implementation:
-        - A login form will be created using the allauth library, allowing users to login to an existing account.
+        - A login form will be created using the allauth library, allowing users to log in to an existing account.
 
 ### Wireframes
 
@@ -251,6 +251,7 @@ User stories for this project can be viewed on [Trello](https://trello.com/b/OdC
 * [Git](https://git-scm.com/) was used to track changes made to the project and to commit and push code to the repository.
 * [Wave Web Accessibility Evaluation Tool](https://wave.webaim.org) was used to test the website's accessibility.
 * [Lighthouse](https://developers.google.com/web/tools/lighthouse#devtools) was used to run an audit of the website. 
+* [Grammarly](https://www.grammarly.com) was used to check for typos in Readme.md.
 
 
 ## Testing
@@ -261,23 +262,23 @@ User stories for this project can be viewed on [Trello](https://trello.com/b/OdC
         1. Right-click on the screen and choose 'Inspect' ('Inspect element' on Opera).
         1. Grab and drag the responsive window slowly down to 300px and then back again, checking that everything is displayed correctly in each size / breakpoint.
     * Result:
-        * All elements are responsive and display correctly in each of the browsers and in each of the window sizes.
-    * Additionally, I also had a chance to check the responsiveness on a number of 'real' devices, such as: Samsung Galaxy S8, Samsung Galaxy A42, Xiaomi POCO X Pro, iPhone X, iPhone 13 Pro, Samsung Galaxy Tab A. All elements are responsive and display correctly on each of these devices.
+        * All elements are responsive and display correctly in each of the browsers and each of the window sizes.
+    * Additionally, I also had a chance to check the responsiveness on several 'real' devices, such as Samsung Galaxy S8, Samsung Galaxy A42, Xiaomi POCO X Pro, iPhone X, iPhone 13 Pro, Samsung Galaxy Tab A. All elements are responsive and display correctly on each of these devices.
 
-* Check that the links in the navigation bar navigate to correct pages. 
+* Check that the links in the navigation bar navigate to the correct pages. 
     * Test:
         1. Open the website in a browser.
         1. Click on all navigation items one by one to make sure the attached links are correct and that they lead the user to the correct parts of the website.
     * Result:
-        * All links working and directing user to the correct pages.
+        * All links working and directing users to the correct pages.
 
 * Check that the 'My reservations' tab in the 'Reservations' dropdown appears only if a user is signed in.
 
-* Check that the 'Reserve a table' tab in the 'Reservations' dropdown redirects to the 'Login' page if user is signed out.
+* Check that the 'Reserve a table' tab in the 'Reservations' dropdown redirects to the 'Login' page if a user is signed out.
 
-* Check that the 'Reserve a table' tab in the 'Reservations' dropdown displays a table reservation form if user is signed in.
+* Check that the 'Reserve a table' tab in the 'Reservations' dropdown displays a table reservation form if a user is signed in.
 
-* Check that when user clicks 'Logout' they are rdirected to a confirmation page ('Are you sure you want to sign out?')
+* Check that when user clicks 'Logout' they are redirected to a confirmation page ('Are you sure you want to sign out?')
 
 * Check that user is correctly notified when they have logged in. 
 
