@@ -101,6 +101,40 @@ TO UPDATE: The website can be accessed [here](https://olgaj1989.github.io/sussex
 
 TO UPDATE 
 
+## Wireframes
+
+* Home
+
+    ![WireframeHome](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/wireframe_home.PNG)
+
+* Menu
+
+    ![WireframeMenu](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/wireframe_menu.PNG)
+
+* Gallery
+
+    ![WireframeGallery](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/wireframe_gallery.PNG)
+
+* Book a table
+
+    ![WireframeReserve](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/wireframe_booking_form.PNG)
+
+* Existing reservations
+
+    ![WireframeReservations](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/wireframe_reservations.PNG)
+
+* Contact Us
+
+    ![WireframeContact](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/wireframe_contact.PNG)
+
+* Register
+
+    ![WireframeRegister](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/wireframe_register.PNG)
+
+* Login
+
+    ![WireframeLogin](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/wireframe_login.PNG)
+
 
 ## Technologies
 
