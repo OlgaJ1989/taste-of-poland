@@ -455,12 +455,28 @@ User stories for this project can be viewed on [Trello](https://trello.com/b/OdC
     * Result:
         * All links are working and all of them redirect to correct pages.
 
-* Check validation of the Reservation form.
+* Check validation of the reservation form.
     * Test:
-        1. Open the website in a browser and navigate to the Contact Us page.
+        1. Open the website in a browser and navigate to the 'Reserve a table' page.
         1. Fill in the form leaving different input areas empty each time to make sure there is a warning message displayed each time you leave any of the fields empty. 
     * Result: 
         * The form cannot be submitted until each of the input fields has been filled in correctly so the validation is working.
+
+* Check that jumping between 'Soups', 'Mains' and 'Desserts' tabs on the 'Menu' page is flawless and that each tab display correct item information. 
+    * Test:
+        1. Open the website in a browser.
+        1. Go to 'Menu' tab.
+        1. Click on 'Soups', 'Mains' and 'Desserts' in turn and check that there is no delay and the information within each tab is correct.
+    * Result:
+        1. The page and it's tabs display flawlessly as expected.
+
+* Check that the photos in the 'Gallery' page display correctly.
+    * Test:
+        1. Open the website in a browser.
+        1. Go to 'Gallery' tab.
+        1. Make sure the photos display (links are working), they are in alignment and displayed in the same sizes.
+    * Result:
+        1. The page and it's images display flawlessly as expected.
 
 ### Validator testing
 
