@@ -14,15 +14,15 @@ TO UPDATE: The website can be accessed [here](https://olgaj1989.github.io/sussex
     * Includes direct links to all parts of the website, allowing the user to easily navigate between them. 
         1. When logged OUT, the user can see the following links in the navbar: Home, Menu, Reservations (with a Reserve A Table dropdown), Gallery, Contact, Register, Login.
 
-           ![Navigation1](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/logged-out-new.PNG)
+           ![Navigation Logged Out](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/logged-out-new.PNG)
 
         2. When logged IN, the user can see the following links in the navbar: Home, Menu, Reservations (with Reserve A Table and My Reservations dropdowns), Gallery, Contact, Logout.  
 
-           ![Navigation2](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/logged-in-new.PNG)
+           ![Navigation Logged In](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/logged-in-new.PNG)
 
         3. On smaller devices the menu links scale down to a toggler, allowing for a cleaner design.
 
-           ![Navigation3](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/responsive-menu.PNG)
+           ![Navigation Responsive](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/responsive-menu.PNG)
       
 * Landing page image with overlaying jumbotron
     * The index.html page (Home) includes a background picture inspired by Polish folk art, with a one-sentence description of the website and a button leading directly to a booking page (if logged in) or to the login page (if logged out).
@@ -77,12 +77,12 @@ TO UPDATE: The website can be accessed [here](https://olgaj1989.github.io/sussex
 * Sign In / Login page
     * Allows the user to log in to an existing account in order to book a table and view existing bookings. It also provides the user with the link to register.      
     
-      ![Bookings](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/sign-in.PNG)
+      ![Sign In](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/sign-in.PNG)
 
 * Sign out / Logout confirmation page
     * A template that renders after the user chooses to log out, giving them a chance to confirm in case they clicked the link by mistake.       
     
-      ![SignOut](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/sign-out-confirm.PNG)
+      ![Sign Out](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/sign-out-confirm.PNG)
 
 *  404 page
     * A custom 404 page has been made to make it easy for the user to come back to the game page after they tried to move to a non-existent page.
@@ -114,6 +114,7 @@ The aim of the website is:
 User stories for this project can be viewed on [Trello](https://trello.com/b/OdCkLJxF/kanban-template).
 
 #### User Experience Epic
+![UX Epic](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/ux_epic.PNG)
 
 1. As a user, I want the main purpose of the website to be clear so that upon entering I immediately know what it's purpose is.
     * Acceptance Criteria:
@@ -140,7 +141,7 @@ User stories for this project can be viewed on [Trello](https://trello.com/b/OdC
     * Implementation:
         - Social media links in the form of FontAwesome icons will be added to the footer and appear on each page.
 
-4. As a user, I want to be able to view the menu so I can choose food items in advance of my visit.
+4. As a user, I want to be able to view the menu so I can choose what I would like to order in advance of my visit.
     * Acceptance Criteria:
         - A list of dishes that the restaurant serves, along with their descriptions and pricing.
         - Clear division between types of dishes.
@@ -151,15 +152,16 @@ User stories for this project can be viewed on [Trello](https://trello.com/b/OdC
     * Acceptance Criteria:
         - A 'Contact' page which includes the venue's contact information.
     * Implementation:
-        - A 'Contact' page will be created and it will include the venue's contact information (such as addres, email and phone number) as well as an embedded Google map showing the restaurant's location. This page will also include the Opening Hours.
+        - A 'Contact' page will be created and it will include the venue's contact information (such as address, email and phone number) as well as an embedded Google map showing the restaurant's location. This page will also include the Opening Hours.
 
 6. As a user, I want to be able to view a photo gallery of dishes, so I can decide whether they look appealing enough for me to visit and try them out.
     * Acceptance Criteria:
-        - A 'Gallery' page displaying photos of the dishes present on the retaurant's menu.
+        - A 'Gallery' page displaying photos of the dishes present on the restaurant's menu.
     * Implementation:
         - A 'Gallery' page will be created, using high quality photos of the food the restaurant serves. It will be made responsible so that users can enjoy good resolution also on smaller devices. 
  
-#### Profile Epic
+#### Admin Profile Epic
+![Admin Profile Epic](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/ap_epic.PNG)
 
 7. As a site admin, I want to be able to view, modify or delete existing bookings.
     * Acceptance Criteria:
@@ -171,7 +173,10 @@ User stories for this project can be viewed on [Trello](https://trello.com/b/OdC
     * Acceptance Criteria:
         - Booking / reservation form not available for unregistered users.
     * Implementation:
-        - If a user that is not logged in clicks on the 'Reserve a table' link in the 'Reservations' dropdown, they will be redirected straight to the 'Login' page. If they do not have login details, the information on the 'Login' page will direct them to the 'Register' page. The 'Reserve a table' link will display the booking form only if they are logged in.    
+        - If a user that is not logged in clicks on the 'Reserve a table' link in the 'Reservations' dropdown, they will be redirected straight to the 'Login' page. If they do not have login details, the information on the 'Login' page will direct them to the 'Register' page. The 'Reserve a table' link will display the booking form only if they are logged in.   
+
+#### User Profile Epic 
+![User Profile Epic](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/up_epic.PNG)
 
 9. As a user, I want to be able to create, view, edit and delete a table reservation.
     * Acceptance Criteria:
