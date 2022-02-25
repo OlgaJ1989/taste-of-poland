@@ -198,6 +198,10 @@ User stories for this project can be viewed on [Trello](https://trello.com/b/OdC
     * Implementation:
         - A login form will be created using the allauth library, allowing users to log in to an existing account.
 
+### Entity Relationship Diagram
+
+![ERD](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/erd.PNG)
+
 ### Wireframes
 
 * Home
