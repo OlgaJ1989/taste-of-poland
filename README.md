@@ -96,7 +96,7 @@ TO UPDATE: The website can be accessed [here](https://olgaj1989.github.io/sussex
 
 ### Features left to implement
 
-TO UPDATE 
+I am working on applying logic that will stop users from booking a certain table at a certain time and date if it has already been booked by someone else. 
 
 ## User Experience Design
 
