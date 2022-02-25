@@ -2,10 +2,11 @@
 
 {% block content %}
 
+<!-- Existing bookings page -->
 <div class="container profile-container">
     <div class="row">
         <div class="col-12 mt-5">
-            <h1 class="text-center text-white">Current bookings</h1>
+            <h1 class="text-center text-white">My reservations</h1>
             <p class="text-center" style="font-size: 20px">Welcome to your booking management headquarters where you can
                 find all the bookings you made so far. <br>To book a table, please click <a
                     href="{% url 'create-booking' %}">here</a>.
@@ -14,6 +15,7 @@
     </div>
     <hr class="rounded mt-5">
     <div class="row">
+        <!-- List of bookings -->
         <div class="col-12 mt-5">
             {% for reservation in reservations %}
             <div>
@@ -22,7 +24,9 @@
                     at {{ reservation.time }} - {{ reservation.first_name }}
                     {{ reservation.last_name }} - party of {{ reservation.party_size }}.
                 </p>
+                <!-- Edit a booking -->
                 <a href="{% url 'update-booking' reservation.id %}" class="btn btn-primary">Edit</a>
+                <!-- Delete a booking -->
                 <a href="{% url 'delete-booking' reservation.id %}" class="btn btn-danger">Delete</a>
                 {% endif %}
             </div>

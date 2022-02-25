@@ -2,6 +2,7 @@
 
 {% block content %}
 
+<!-- Menu displaying the food menu -->
 <div class="container menu-container">
     <div class="center-title">
         <h1 class="text-white text-center">Our Menu</h1>
@@ -10,18 +11,19 @@
     <hr class="rounded mt-5">
     <div class="food-menu-card">
         <div>
-            <!-- Nav tabs -->
+            <!-- Navigation tabs -->
             <ul class="nav tabs-menu-nav justify-content-center mb30" role="tablist">
-                <li class="nav-item" role="presentation"><a class="nav-link active show" href="#breakfast"
-                        aria-controls="breakfast" role="tab" data-toggle="tab" aria-selected="true">Soups</a></li>
-                <li class="nav-item" role="presentation"><a class="nav-link" href="#lunch" aria-controls="lunch"
+                <li class="nav-item" role="presentation"><a class="nav-link active show" href="#soups"
+                        aria-controls="soups" role="tab" data-toggle="tab" aria-selected="true">Soups</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link" href="#mains" aria-controls="mains"
                         role="tab" data-toggle="tab" aria-selected="false">Mains</a></li>
-                <li class="nav-item" role="presentation"><a class="nav-link" href="#dinner" aria-controls="dinner"
+                <li class="nav-item" role="presentation"><a class="nav-link" href="#desserts" aria-controls="desserts"
                         role="tab" data-toggle="tab" aria-selected="false">Desserts</a></li>
             </ul>
-            <!-- Tab panes -->
+            <!-- Tab panes / contents -->
             <div class="tab-content">
-                <div role="tabpanel" class="tab-pane fade active show" id="breakfast">
+                <!-- Soups -->
+                <div role="tabpanel" class="tab-pane fade active show" id="soups">
                     <div class="row">
                         <div class="col-md-6 mb20">
                             <article class="media">
@@ -163,7 +165,8 @@
                         </div>
                     </div>
                 </div>
-                <div role="tabpanel" class="tab-pane fade" id="lunch">
+                <!-- Mains -->
+                <div role="tabpanel" class="tab-pane fade" id="mains">
                     <div class="row">
                         <div class="col-md-6 mb20">
                             <article class="media">
@@ -294,7 +297,8 @@
                         </div>
                     </div>
                 </div>
-                <div role="tabpanel" class="tab-pane fade" id="dinner">
+                <!-- Desserts -->
+                <div role="tabpanel" class="tab-pane fade" id="desserts">
                     <div class="row">
                         <div class="col-md-6 mb20">
                             <article class="media">

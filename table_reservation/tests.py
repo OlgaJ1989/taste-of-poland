@@ -74,7 +74,7 @@ class TestViews(TestCase):
 
     def test_login_redirects_to_home_page(self):
         """ Test when login successful redirected to home page' """
-        self.client.login(username='Test', password='Test12345')  
+        self.client.login(username='Test', password='Test12345')
         response = self.client.get('/')
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'index.html')
