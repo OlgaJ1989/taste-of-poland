@@ -576,7 +576,8 @@ All photos/images have been taken from [ShutterStock](https://www.shutterstock.c
 ### Code
 
 I have used this code snippet from [Bootdey](https://www.bootdey.com/snippets/view/bs4-Food-Menu) to create the Menu page.
+I have used a code snippet from [CSS Tricks](https://css-tricks.com/perfect-full-page-background-image/) to add the background Home page image.
 
 ### Acknowledgements
 
-As always, I'd like to thank my mentor Daisy McGirr for her guidance throughout this project. 
+As always, I'd like to thank my mentor Daisy McGirr for her guidance and priceless advice throughout this project. 
