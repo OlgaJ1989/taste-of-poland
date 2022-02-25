@@ -510,7 +510,7 @@ User stories for this project can be viewed on [Trello](https://trello.com/b/OdC
 
 ### Automated testing
 
-All tests in tests.py  successfuly.
+All tests in tests.py successful.
 
 ![Automated Test Result](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/auto_test.PNG)
 
