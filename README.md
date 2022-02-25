@@ -40,7 +40,7 @@ The website can be accessed [here](https://taste-of-poland.herokuapp.com/).
       ![Cards](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/cards.PNG)
 
 * Interactive footer across all pages
-    * It consists of clickable icons linking the user to a choice of social media platforms (Facebook, Twitter, Instagram). All links open in new tabs so the user does not have to leave the Sussex Walks page.
+    * It consists of clickable icons linking the user to a choice of social media platforms (Facebook, Twitter, Instagram). All links open in new tabs so the user does not have to leave the Taste of Poland page.
 
       ![Footer](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/footer.PNG)
 
@@ -551,8 +551,6 @@ All tests in tests.py were run successfuly.
 No other bugs found.
 
 ## Deployment
-
-TO UPDATE BEFORE FINAL DEPLOYMENT!
 
 The below steps were followed to deploy this project to Heroku:
 1. Go to [Heroku](https://dashboard.heroku.com/apps) and click 'New' to create a new app.
