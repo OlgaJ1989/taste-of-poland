@@ -263,7 +263,7 @@ User stories for this project can be viewed on [Trello](https://trello.com/b/OdC
         1. Grab and drag the responsive window slowly down to 300px and then back again, checking that everything is displayed correctly in each size / breakpoint.
     * Result:
         * All elements are responsive and display correctly in each of the browsers and each of the window sizes.
-    * Additionally, I also had a chance to check the responsiveness on several 'real' devices, such as Samsung Galaxy S8, Samsung Galaxy A42, Xiaomi POCO X Pro, iPhone X, iPhone 13 Pro, Samsung Galaxy Tab A. All elements are responsive and display correctly on each of these devices.
+        * Additionally, I also had a chance to check the responsiveness on several 'real' devices, such as Samsung Galaxy S8, Samsung Galaxy A42, Xiaomi POCO X Pro, iPhone X, iPhone 13 Pro, Samsung Galaxy Tab A. All elements are responsive and display correctly on each of these devices.
 
 * Check that the links in the navigation bar navigate to the correct pages. 
     * Test:
@@ -362,7 +362,7 @@ User stories for this project can be viewed on [Trello](https://trello.com/b/OdC
         1. Open the website in a browser.
         1. Log in.
         1. Try to access an 'Edit' link of a reservation created by a different user.
-        1. You should be redirected back to the page you came from and a 'You are not aurhorised to edit this reservation.' alert should appear under the navbar for a few seconds.
+        1. You should be redirected back to the page you came from and a 'You are not authorised to edit this reservation.' alert should appear under the navbar for a few seconds.
     * Result:
         1. As expected, user gets redirected to their previous destination and an alert is displayed. 
 
@@ -371,7 +371,7 @@ User stories for this project can be viewed on [Trello](https://trello.com/b/OdC
         1. Open the website in a browser.
         1. Log in.
         1. Try to access a 'Delete' link of a reservation created by a different user.
-        1. You should be redirected back to the page you came from and a 'You are not aurhorised to delete this reservation.' alert should appear under the navbar for a few seconds.
+        1. You should be redirected back to the page you came from and a 'You are not authorised to delete this reservation.' alert should appear under the navbar for a few seconds.
     * Result:
         1. As expected, user gets redirected to their previous destination and an alert is displayed. 
 
@@ -382,17 +382,6 @@ User stories for this project can be viewed on [Trello](https://trello.com/b/OdC
         1. Go to 'Reserve a table' in the 'Reservations' dropdown. 
         1. Fill in the form and 'Submit'.
         1. You should be redirected to 'My reservations' and a 'Booking created successfuly' alert should appear under the navbar for a few seconds.
-    * Result:
-        1. As expected, user gets redirected to 'My reservations' and an alert is displayed.
-
-* Check that when a reservation is deleted, user is redirected to 'My reservations' and a 'Booking deleted.' alert is displayed.
-    * Test:
-        1. Open the website in a browser.
-        1. Log in.
-        1. Go to 'My reservations' in the 'Reservations' dropdown. 
-        1. Click 'Delete' next to a chosen reservation. 
-        1. When asked to confirm, do so.
-        1. You should be redirected to 'My reservations' and a 'Booking deleted.' alert should appear under the navbar for a few seconds.
     * Result:
         1. As expected, user gets redirected to 'My reservations' and an alert is displayed.
 
@@ -417,16 +406,17 @@ User stories for this project can be viewed on [Trello](https://trello.com/b/OdC
     * Result:
         1. As expected, user gets redirected to the deletion confirmation page.
 
-* Check that when a 'Confirm' button is clicked on an 'Are you sure you want to delete your booking?' page, user is redirected to 'My Reservations' and the booking thy deleted is gone.
+* Check that when a 'Confirm' button is clicked on an 'Are you sure you want to delete your booking?' page, user is redirected to 'My Reservations', a 'Booking deleted.' alert is displayed and the booking thy deleted is gone.
     * Test:
         1. Open the website in a browser.
         1. Log in.
         1. Go to 'My reservations' in the 'Reservations' dropdown. 
         1. Click 'Delete' next to a chosen reservation. 
         1. 'Are you sure you want to delete your booking?' Click 'Confirm'.
-        1. You should be redirected to 'My reservations' and the booking you deleted should be gone.
+        1. You should be redirected to 'My reservations' and see the 'Booking deleted.' alert.
+        1. The booking you deleted should be gone.
     * Result:
-        1. As expected, user gets redirected to 'My reservations' and the deleted booking is gone.
+        1. As expected, user gets redirected to 'My reservations', sees the alert and the deleted booking is gone.
 
 * Check that when a 'No! Go Back' button is clicked on an 'Are you sure you want to delete your booking?' page, user is redirected to 'My Reservations' and all the bookings are still there (none have been deleted).
     * Test:
@@ -462,13 +452,13 @@ User stories for this project can be viewed on [Trello](https://trello.com/b/OdC
     * Result: 
         * The form cannot be submitted until each of the input fields has been filled in correctly so the validation is working.
 
-* Check that jumping between 'Soups', 'Mains' and 'Desserts' tabs on the 'Menu' page is flawless and that each tab display correct item information. 
+* Check that jumping between 'Soups', 'Mains' and 'Desserts' tabs on the 'Menu' page is flawless and that each tab displays correct item information. 
     * Test:
         1. Open the website in a browser.
         1. Go to 'Menu' tab.
         1. Click on 'Soups', 'Mains' and 'Desserts' in turn and check that there is no delay and the information within each tab is correct.
     * Result:
-        1. The page and it's tabs display flawlessly as expected.
+        1. The page and its tabs display flawlessly as expected.
 
 * Check that the photos in the 'Gallery' page display correctly.
     * Test:
@@ -477,6 +467,41 @@ User stories for this project can be viewed on [Trello](https://trello.com/b/OdC
         1. Make sure the photos display (links are working), they are in alignment and displayed in the same sizes.
     * Result:
         1. The page and it's images display flawlessly as expected.
+
+* Check that when the email address is clicked on the 'Contact' page, it opens up the user's mailing app with a new message.
+    * Test:
+        1. Open the website in a browser.
+        1. Go to 'Contact' tab.
+        1. Click on the actual email address. 
+        1. A click should open a new email in one's mailing app.
+    * Result:
+        1. Upon clicking on the email address, a mailing app was opened (in my case Outlook). This works as expected.
+
+* Check that when the phone number is clicked on the 'Contact' page, it opens up the user's phone app.
+    * Test:
+        1. Open the website in a browser.
+        1. Go to 'Contact' tab.
+        1. Click on the actual phone number. 
+        1. A click should open a window or app allowing the user to make a call.
+    * Result:
+        1. Upon clicking on the phone number, a phone app was opened (in my case Skype). This works as expected.
+
+* Check validation of the Register form.
+    * Test:
+        1. Open the website in a browser and make sure you are logged out.
+        1. Click 'Register'.
+        1. Fill in the form leaving different input areas empty each time to make sure there is a warning message displayed each time you leave any of the fields empty (apart from email field as it is optional). 
+    * Result: 
+        * The form cannot be submitted and account created until each of the input fields has been filled in correctly so the validation is working.
+
+* Check validation of the Login form.
+    * Test:
+        1. Open the website in a browser and make sure you are logged out.
+        1. Click 'Login'.
+        1. Fill in the form leaving different input areas empty each time to make sure there is a warning message displayed each time you leave any of the fields empty. 
+    * Result: 
+        * The form cannot be submitted and user logged in until each of the input fields has been filled in correctly so the validation is working.
+
 
 ### Validator testing
 
