@@ -260,6 +260,8 @@ User stories for this project can be viewed on [Trello](https://trello.com/b/OdC
 
 ## Testing
 
+### Manual testing
+
 * Check the responsiveness of the website on different screen sizes across different browsers (Chrome, Firefox, Opera).
     * Test:
         1. Open the website in each of the aforementioned browsers.
@@ -505,6 +507,12 @@ User stories for this project can be viewed on [Trello](https://trello.com/b/OdC
         1. Fill in the form leaving different input areas empty each time to make sure there is a warning message displayed each time you leave any of the fields empty. 
     * Result: 
         * The form cannot be submitted and user logged in until each of the input fields has been filled in correctly so the validation is working.
+
+### Automated testing
+
+All tests in tests.py  successfuly.
+
+![Automated Test Result](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/auto_test.PNG)
 
 
 ### Validator testing
