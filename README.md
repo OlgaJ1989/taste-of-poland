@@ -2,7 +2,7 @@
 
 Taste of Poland is a restaurant website designed to allow customers to make, edit and delete reservations. Users can also view the menu, gallery, and the venue's contact details.
 
-TO UPDATE: The website can be accessed [here](https://olgaj1989.github.io/sussex-walks/).
+The website can be accessed [here](https://taste-of-poland.herokuapp.com/).
 
 ![Mockup](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/mockup.PNG)
 
@@ -262,7 +262,7 @@ User stories for this project can be viewed on [Trello](https://trello.com/b/OdC
 
 ### Manual testing
 
-* Check the responsiveness of the website on different screen sizes across different browsers (Chrome, Firefox, Opera).
+* Check the responsiveness of the website on different screen sizes across different browsers (Chrome, Firefox, Opera, Edge).
     * Test:
         1. Open the website in each of the aforementioned browsers.
         1. Right-click on the screen and choose 'Inspect' ('Inspect element' on Opera).
@@ -510,7 +510,7 @@ User stories for this project can be viewed on [Trello](https://trello.com/b/OdC
 
 ### Automated testing
 
-All tests in tests.py successful.
+All tests in tests.py were run successfuly.
 
 ![Automated Test Result](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/auto_test.PNG)
 
@@ -561,9 +561,7 @@ The below steps were followed to deploy this project to Heroku:
 4. Go to 'Settings' and navigate to 'Config Vars'. As the Postgres database has been connected, the DATABASE_URL is already there. Add the remaining config vars: CLOUDINARY_URL, SECRET_KEY, (the values for these variables depend on your own personal set up and will not be added here for security reasons). 
 5. Leave 'Settings' and go to 'Deploy'. Scroll down and set 'Deployment Method' to GitHub. Once GitHub is chosen, find your repository and connect it to Heroku.
 6. Scroll down to Manual Deploy, make sure the 'main' branch is selected and click 'Deploy Branch'.
-
-TO UPDATE 
-7. The deployed app can be found TO UPDATE [here](https://stranded.herokuapp.com/).
+7. The deployed app can be found [here](https://taste-of-poland.herokuapp.com/).
 
 ## Credits
 
@@ -573,7 +571,7 @@ All the general 'blurb' across the website has been written by me, apart from th
 
 ### Media 
 
-All photos / images have been taken from [ShutterStock](https://www.shutterstock.com/.)
+All photos/images have been taken from [ShutterStock](https://www.shutterstock.com/.)
 
 ### Code
 
