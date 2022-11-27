@@ -2,7 +2,7 @@
 
 Taste of Poland is a restaurant website designed to allow customers to make, edit and delete reservations. Users can also view the menu, gallery, and the venue's contact details.
 
-The website can be accessed [here](https://taste-of-poland.herokuapp.com/).
+The website can be accessed [here](https://taste-of-poland.onrender.com/).
 
 ![Mockup](https://github.com/OlgaJ1989/taste-of-poland/blob/main/docs/mockup.PNG)
 
